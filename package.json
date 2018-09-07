@@ -1,0 +1,24 @@
+{
+  "name": "darinakuleva.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarinaKuleva/DarinaKuleva.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarinaKuleva/DarinaKuleva.github.io/issues"
+  },
+  "homepage": "https://github.com/DarinaKuleva/DarinaKuleva.github.io#readme"
+}
