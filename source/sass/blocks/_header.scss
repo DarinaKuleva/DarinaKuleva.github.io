@@ -1,0 +1,96 @@
+.header {
+
+  &__logo {
+    border: 1px solid #010914;
+    height: 150px;
+    width: 500px;
+    position: relative;
+    border-left: none;
+    border-right: none;
+    margin: 30px auto 30px auto;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 7.2px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #f1f1f1;
+    position: relative;
+  }
+}
+
+  .mask {
+
+  &__border {
+    opacity: 0.3;
+    position: absolute;
+    background-color: #f1f1f1;
+  }
+
+  &__top-left {
+    top: -1px;
+    left: 1px;
+    width: 5%;
+    height: 1px;
+  }
+
+  &__top-right {
+    top: -1px;
+    right: 1px;
+    width: 5%;
+    height: 1px;
+  }
+
+  &__bottom-left {
+    bottom: -1px;
+    left: 1px;
+    width: 5%;
+    height: 1px;
+  }
+
+  &__bottom-right {
+    bottom: -1px;
+    right: 1px;
+    width: 5%;
+    height: 1px;
+  }
+
+  &__left-bottom {
+    left: 1px;
+    bottom: 0;
+    width: 1px;
+    height: 15%;
+  }
+
+  &__left-top {
+    left: 1px;
+    top: 0;
+    width: 1px;
+    height: 15%;
+  }
+
+  &__right-bottom {
+    right: 1px;
+    bottom: 0;
+    width: 1px;
+    height: 15%;
+  }
+
+  &__right-top {
+    right: 1px;
+    top: 0;
+    width: 1px;
+    height: 15%;
+  }
+}
+
+
+.btn-close {
+  position: fixed;
+  z-index: 101;
+  opacity: 0.5;
+  right: 90px;
+  top: 35px;
+}

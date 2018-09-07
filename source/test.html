@@ -1,0 +1,44 @@
+<!DOCTYPE htmh>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style type='text/css'>
+body, html { height:100%; }
+</style>
+<script type="text/javascript">
+var_spoiler=null;
+/* Функция fspoiler(id,time,step,min,max)
+ id - ссылка на объект или его текстовое id
+ time - время анимации в миллисекундах
+ step - шаг анимации в миллисекундах
+ min - минимальные размеры блочного элемента в пикселях
+ max - максимальные размеры блочного элемента в пикселях
+*/
+function fspoiler(id,time,step,min,max) {
+  id = (typeof id!="object") ? document.getElementById(id) : id;
+  min = min || 0; max = max || 100; if (min>=max || time<step) return false; // Параметры некорректные
+  var h=parseInt(id.style.height); // можно взять вычисленный размер id.currentStyle["height"] или document.defaultView.getComputedStyle(id, "").getPropertyValue('height')
+  var s=(max-min)/(time/step);
+  if (var_spoiler) clearInterval(var_spoiler);
+  var_spoiler = (h>max/2) ? setInterval(function() { fspoiler_step("close",id.id,min,max,s); },step) : setInterval(function() { fspoiler_step("open",id.id,min,max,s); },step);
+  return true; // Анимация стартанула
+}
+function fspoiler_step(mode,id,min,max,s) {
+  id = (typeof id!="object") ? document.getElementById(id) : id;
+  var h=parseInt(id.style.height);
+  if (mode=="open") h+=s; else h-=s;
+  if (h<=min || h>=max) { if (var_spoiler) clearInterval(var_spoiler); var_spoiler=null; h=(h<=min)?min:max; }
+  id.style.height=''+Math.round(h)+'px';
+}
+</script>
+</head>
+<body>
+<div id="spoiler" style="position:relative; left:0px; top:0px; width:100%; height:0px; overflow:hidden;">
+текст текст текст текст текст текст текст<br>
+текст текст текст текст текст текст текст<br>
+текст текст текст текст текст текст текст<br>
+текст текст текст текст текст текст текст
+</div>
+<input type="button" onclick="fspoiler('spoiler',300,20,0,100);" value="Спойлер" />
+</body>
+</html>
