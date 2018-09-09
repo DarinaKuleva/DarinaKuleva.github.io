@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Portfolio</title>
+    <title>start-page</title>
   </head>
   <body>
     <svg style="display:none">
-      <symbol id="icon-search" viewBox="0 0 50 50">
-        <path style=" " d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z "/>
-      </symbol>
       <symbol id="icon-gmail" viewBox="0 0 48 48">
         <path style=" fill:#E0E0E0;" d="M 5.5 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 7.5 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.066406 2 11 L 2 37 C 2 38.933594 3.566406 40.5 5.5 40.5 Z "/>
         <path style=" fill:#D9D9D9;" d="M 26 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 7.5 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.066406 2 11 Z "/>
@@ -30,149 +27,75 @@
         <circle style="fill:#03A9F4;" cx="14.5" cy="14.5" r="11.5"/>
         <path style="fill:#FFFFFF;" d="M24.602,36C18,36,15,32.699,15,30.199C15,28.898,15.898,28,17.199,28  c2.801,0,2.102,4.102,7.402,4.102c2.699,0,4.199-1.5,4.199-3c0-0.902-0.402-1.902-2.199-2.402l-5.902-1.5  C16,24,15.102,21.398,15.102,18.898c0-5.098,4.699-6.898,9.098-6.898C28.301,12,33,14.199,33,17.199c0,1.301-1,2.102-2.301,2.102  c-2.398,0-2-3.402-6.801-3.402c-2.398,0-3.797,1.102-3.797,2.703c0,1.598,1.898,2.098,3.598,2.5l4.402,1  C32.898,23.199,34,26,34,28.699C33.898,32.898,30.898,36,24.602,36z"/>
       </symbol>
-      <symbol id="icon-up" viewBox="0 0 240.835 240.835">
-        <path id="Expand_Less" d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155   c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155   L129.007,57.819z" fill="#FFFFFF"/>
-      </symbol>
-      <symbol id="icon-close" viewBox="0 0 128 128">
-      <circle cx="64" cy="64" r="59"/>
-  <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" fill="#fff" fill-rule=evenodd d="M43.443,37.28L90.7,84.534A4.358,4.358,0,1,1,84.534,90.7L37.28,43.443A4.358,4.358,0,0,1,43.443,37.28Z"/>
-  <path id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" fill="#fff" fill-rule=evenodd d="M37.28,84.534L84.534,37.28A4.358,4.358,0,1,1,90.7,43.443L43.443,90.7A4.358,4.358,0,1,1,37.28,84.534Z"/>
-
-      </symbol>
     </svg>
-    <header class="header">
-      <div class="header__logo mask">
-          <div class="mask__top-left mask__border"></div>
-          <div class="mask__top-right mask__border"></div>
-          <div class="mask__bottom-left mask__border"></div>
-          <div class="mask__bottom-right mask__border"></div>
-          <div class="mask__left-bottom mask__border"></div>
-          <div class="mask__left-top mask__border"></div>
-          <div class="mask__right-bottom mask__border"></div>
-          <div class="mask__right-top mask__border"></div>
-          <h1 class="header__title">портфолио</h1>
-          <article class="btn-close">
-            <a href="home-page.html">
-                    <svg width="60px" height="60px">
-                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-close"></use>
+    <main class="page-main">
+      <div class="page-main__top">
+        <section class="logo">
+          <h1 class="logo__name">
+            Дарина
+          </h1>
+          <h1 class="logo__syname">
+            Кулева
+          </h1>
+        </section>
+        <div>
+          <a class="logo__btn" href="portfolio.html">портфолио</a>
+        </div>
+      </div>
+      <div class="page-main__bottom">
+        <section class="inform">
+          <div class="photo">
+            <img src="img/darina.png" width="222px" height="223px">
+          </div>
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contacts__link">
+                  <a href="https://vk.com/id40415691">
+                    <svg width="50px" height="50px">
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-vk"></use>
                     </svg>
                   </a>
-          </article>
-        </div>
-    </header>
-    <main>
-      <section class="portfolio">
-        <div class="portfolio__wrapper">
-          <div class="wrapper">
-            <ul class="portfolio__list">
-              <li class="portfolio__item portfolio--mishka">
-                <a href="./" class="portfolio__link">
-                <img src="img/mishka.jpg" width="400px" height="352px">
-                </a>
-                <div class="portfolio__info">
-                  <h3 class="portfolio--name">mishka</h3>
-                  <p class="portfolioi--text">главная + внутренняя страница<br>адаптив, работа с препроцессорами</p>
-                  <svg class="icon-search" width="50px" height="50px">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
-                  </svg>
+                </div>
+                <div class="contacts__title contacts__title--vk"><a href="https://vk.com/darinakuleva">darinakuleva</a></div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__link">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=darinakuleva@gmail.com&su=Тема">
+                    <svg width="45px" height="45px">
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-gmail"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="contacts__title contacts__title--gmail">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=darinakuleva@gmail.com&su=Тема">darinakuleva@gmail.com</a>
                 </div>
               </li>
-              <li class="portfolio__item portfolio--sedona">
-                <a href="./" class="portfolio__link">
-                <img src="img/Sedona.jpg" width="400px" height="352px">
-                </a>
-                <div class="portfolio__info">
-                  <h3 class="portfolio--name">sedona</h3>
-                  <p class="portfolioi--text">главная + внутренняя страницы</p>
-                  <svg class="icon-search" width="50px" height="50px">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
-                  </svg>
+              <li class="contacts__item">
+                <div class="contacts__link">
+                  <a href="skype: Darina Kuleva
+                    ?call">
+                    <svg width="47px" height="47px">
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-skype"></use>
+                    </svg>
+                  </a>
                 </div>
-              </li>
-              <li class="portfolio__item portfolio--interface">
-                <a href="./" class="portfolio__link">
-                <img src="img/Interface.jpg" width="400px" height="352px">
-                </a>
-                <div class="portfolio__info">
-                  <h3 class="portfolio--name">interface</h3>
-                  <p class="portfolioi--text">главная + внутренняя страница</p>
-                  <svg class="icon-search" width="50px" height="50px">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
-                  </svg>
-                </div>
-              </li>
-              <li class="portfolio__item portfolio--minimo">
-                <a href="./" class="portfolio__link">
-                <img src="img/Minimo.jpg" width="400px" height="352px">
-                </a>
-                <div class="portfolio__info">
-                  <h3 class="portfolio--name">minimo</h3>
-                  <p class="portfolioi--text">лендинг</p>
-                  <svg class="icon-search" width="50px" height="50px">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
-                  </svg>
-                </div>
-              </li>
-              <li class="portfolio__item portfolio--bike">
-                <a href="./" class="portfolio__link">
-                <img src="img/Bike.jpg" width="400px" height="352px" class="imgg">
-                </a>
-                <div class="portfolio__info">
-                  <h3 class="portfolio--name">bike</h3>
-                  <p class="portfolioi--text">лендинг</p>
-                  <svg class="icon-search" width="50px" height="50px">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
-                  </svg>
+                <div class="contacts__title contacts__title--skype"><a href="skype: Darina Kuleva
+                  ?call">Darina Kuleva
+                  </a>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer-logo">
-          <h3 class="footer-logo__name">
-            Дарина
-          </h3>
-          <h3 class="footer-logo__syname">
-            Кулева
-          </h3>
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/id40415691">
-                <svg width="50px" height="50px">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <!--<a class="social__link social__link--gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=darinakuleva@gmail.com&su=Тема">-->
-              <a class="social__link social__link--gmail" href="mailto:darinakuleva@gmail.com">
-                <svg width="45px" height="45px">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-gmail"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--skype" href="skype: Darina Kuleva
-                ?call">
-                <svg width="45px" height="45px">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-skype"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="copyright">&copy; 2018</p>
-        </div>
+          <div class="about-me">
+            <p class="about-me__greeting">привет!</p>
+            <p class="about-me__data">Меня зовут Дарина <br>я занимаюсь созданием сайтов и лендингов</p>
+            <div class="about-me__more">
+              <a class="about-me__btn" href="about-me.html">подробнее...</a>
+            </div>
+          </div>
+        </section>
       </div>
-    </footer>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bottomtop.js"></script><script type="text/javascript">var pageTracker = _gat._getTracker("");pageTracker._initData();pageTracker._trackPageview();</script>
+    </main>
   </body>
 </html>
