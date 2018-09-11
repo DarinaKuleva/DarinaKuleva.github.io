@@ -90,12 +90,12 @@
 
   &__data {
     font-size: 22px;
-    color:  #838181;;
+    color:  #838181;
     margin: 0;
     margin-top: 0px;
     margin-bottom: 25px;
     position: relative;
-    text-transform: capitalize;
+    text-transform: none;
   }
 
    &__more {
@@ -115,7 +115,7 @@
  &__data::after {
     content: "";
     position: absolute;
-    left:50%;
+    left: 50%;
     margin-left: -156px;
     bottom: -85px;
     height: 1px;

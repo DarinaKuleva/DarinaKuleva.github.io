@@ -107,7 +107,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #010914;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto';
+  cursor: default; }
 
 img {
   max-width: 100%;
@@ -253,7 +254,7 @@ img {
     margin-top: 0px;
     margin-bottom: 25px;
     position: relative;
-    text-transform: capitalize; }
+    text-transform: none; }
   .about-me__more {
     font-size: 22px;
     /*margin-bottom: 66px;*/
@@ -391,7 +392,159 @@ img {
   right: 90px;
   top: 35px; }
 
-.about-darina {
+.btn-close:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02); }
+
+.about {
   width: 100%;
   margin: 0;
   background-color: #f1f1f1; }
+  .about__container {
+    width: 1100px;
+    margin: 0 auto; }
+  .about__promo {
+    width: 720px;
+    margin: 0 auto 50px auto;
+    padding-top: 70px;
+    color: #010914;
+    font-size: 16px;
+    line-height: 34px; }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding-bottom: 280px; }
+  .about__item {
+    width: 500px;
+    color: #838181;
+    margin: 0;
+    margin-top: 40px; }
+  .about__item:hover {
+    color: #010914; }
+  .about__text-instrument {
+    padding-right: 46px; }
+  .about__text-dynamics, .about__text-html, .about__text-automat {
+    padding-right: 63px; }
+  .about__item-title {
+    color: #010914;
+    font-size: 28px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    margin: 0; }
+  .about__item-html {
+    position: relative; }
+  .about__item-html::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/about-html.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item-adapt {
+    position: relative; }
+  .about__item-adapt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/about-adapt.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item-automat {
+    position: relative; }
+  .about__item-automat::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    height: 57px;
+    width: 57px;
+    background-image: url("../img/about-automat.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item-dynamics {
+    position: relative; }
+  .about__item-dynamics::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/about-js.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item-graph {
+    position: relative; }
+  .about__item-graph::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/about-graph.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item-instrument {
+    position: relative; }
+  .about__item-instrument::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/about-instr.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__item:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02); }
+  .about__title {
+    color: #010914;
+    font-size: 36px;
+    letter-spacing: 2.2px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    text-align: center; }
+  .about__study {
+    width: 576px;
+    margin: 70px auto 0 auto;
+    padding-bottom: 50px; }
+  .about__item-study {
+    font-size: 34px;
+    position: relative;
+    padding-left: 110px; }
+  .about__item-study::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 65px;
+    width: 65px;
+    background-image: url("../img/about-study.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+  .about__move {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    bottom: 300px;
+    display: none;
+    animation: myAdd  1s forwards ease-in-out; }
+
+@keyframes myAdd {
+  from {
+    height: 0px; }
+  to {
+    height: 100px; } }
