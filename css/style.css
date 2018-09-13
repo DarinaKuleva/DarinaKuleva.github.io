@@ -390,26 +390,26 @@ img {
   height: 15%; }
 
 .mask__top {
-  top: 87px;
-  right: 2px;
+  top: 89px;
+  left: 2px;
   width: 7%;
   height: 1px; }
 
 .mask__right {
-  right: 2px;
-  top: 88px;
+  right: 1px;
+  bottom: 2px;
   width: 1px;
   height: 15%; }
 
 .mask__bottom {
   bottom: 1px;
-  left: 1px;
+  right: 1px;
   width: 7%;
   height: 1px; }
 
 .mask__left {
   left: 1px;
-  bottom: 2px;
+  top: 89px;
   width: 1px;
   height: 15%; }
 
@@ -438,7 +438,7 @@ img {
     margin: 0 auto 50px auto;
     padding-top: 70px;
     color: #010914;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 34px;
     position: relative; }
   .about__list {
@@ -566,5 +566,5 @@ img {
 
 .about-text {
   border: 1px solid #f1f1f1;
-  padding: 20px 65px 20px 65px;
+  padding: 30px 55px 30px 55px;
   position: relative; }
