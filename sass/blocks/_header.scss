@@ -29,6 +29,11 @@
     background-color: #f1f1f1;
   }
 
+  &__about{
+    position: absolute;
+    background-color: #010914;
+  }
+
   &__top-left {
     top: -1px;
     left: 1px;
@@ -81,6 +86,34 @@
   &__right-top {
     right: 1px;
     top: 0;
+    width: 1px;
+    height: 15%;
+  }
+
+  &__top {
+    top: 87px;
+    right: 1px;
+    width: 7%;
+    height: 1px;
+  }
+
+  &__right {
+    right: 1px;
+    top: 88px;
+    width: 1px;
+    height: 15%;
+  }
+
+  &__bottom {
+    bottom: 1px;
+    left: 1px;
+    width: 7%;
+    height: 1px;
+  }
+
+  &__left {
+    left: 1px;
+    bottom: 2px;
     width: 1px;
     height: 15%;
   }

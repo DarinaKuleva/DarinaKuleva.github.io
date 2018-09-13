@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "clipboard": "^2.0.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
