@@ -1,0 +1,282 @@
+.about {
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/mobile/gray-line.png");
+    background-repeat: repeat-x;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 81px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text--eco {
+    margin-top: 17px;
+    margin-bottom: 29px;
+    margin-right: 64px;
+  }
+
+  &__text--style {
+    margin-top: 26px;
+    margin-bottom: 35px;
+    margin-right: 41px;
+  }
+
+  &__text--like {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    margin-right: 64px;
+  }
+
+  &__text--handmade {
+    margin-top: 17px;
+    margin-bottom: 33px;
+    margin-right: 22px;
+  }
+
+  &__text--support {
+    margin-top: 27px;
+    margin-bottom: 31px;
+  }
+
+  &__text--pack {
+    margin-top: 19px;
+    margin-bottom: 55px;
+    margin-right: 22px;
+  }
+&__icon--eco {
+    margin-left: 8px;
+  }
+
+&__icon--like {
+    margin-left: 7px;
+  }
+
+&__icon--handmade {
+    margin-left: 3px;
+  }
+
+&__icon--pack {
+    margin-left: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    width: 768px;
+    flex-direction: row;
+
+    &::before {
+      top: 64px;
+      height: 17px;
+      background-image: url("../img/tablet/gray-line.png");
+    }
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__item {
+      width: 50%;
+      margin: 0;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &__title {
+      margin-top: 130px;
+      margin-bottom: 49px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__text--eco {
+      margin-bottom: 57px;
+      margin-right: 120px;
+      margin-top: 16px;
+      margin-left: 2px;
+    }
+
+    &__text--style {
+      margin-bottom: 62px;
+      margin-right: 90px;
+      margin-top: 22px;
+      margin-left: 2px;
+    }
+
+    &__text--like {
+      margin-bottom: 82px;
+      margin-right: 120px;
+      margin-top: 21px;
+      margin-left: 2px;
+    }
+
+    &__text--handmade {
+      margin-bottom: 62px;
+      margin-right: 81px;
+      margin-top: 19px;
+      margin-left: 2px;
+    }
+
+    &__text--support {
+      margin-bottom: 58px;
+      margin-top: 26px;
+      margin-left: 2px;
+    }
+
+    &__text--pack {
+      margin-top: 16px;
+      margin-bottom: 82px;
+      margin-right: 90px;
+      margin-left: 2px;
+    }
+
+    &__item--eco {
+      order: 1;
+    }
+
+    &__item--style {
+      order: 3;
+    }
+
+    &__item--like {
+      order: 5;
+    }
+
+    &__item--handmade {
+      order: 2;
+    }
+
+    &__item--support {
+      order: 4;
+    }
+
+    &__item--pack {
+      order: 6;
+    }
+  }
+
+  .about-icon--eco {
+    margin-left: 11px;
+  }
+
+  .about-icon--handmade {
+    margin-left: 5px;
+  }
+
+  .about-icon--style {
+    margin-left: 5px;
+  }
+
+  .about-icon--like {
+    margin-left: 11px;
+  }
+
+  .about-icon--pack {
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about {
+    width: 1150px;
+
+    &::before {
+      top: 86px;
+      height: 23px;
+      background-image: url("../img/desktop/gray-line.png");
+    }
+
+    &__wrapper {
+      width: 700px;
+    }
+
+    &__title {
+      margin-top: 172px;
+      font-size: 50px;
+    }
+
+    &__text--eco {
+      margin-right: 142px;
+      margin-top: 20px;
+    }
+
+    &__text--style {
+      margin-right: 109px;
+      margin-left: 4px;
+      margin-top: 22px;
+    }
+
+    &__text--like {
+      margin-right: 117px;
+    }
+
+    &__text--handmade {
+      margin-top: 22px;
+      margin-left: 4px;
+    }
+
+    &__text--pack {
+      margin-top: 17px;
+      margin-left: 3px;
+    }
+  }
+
+  .about-icon--eco {
+    margin-left: 13px;
+    margin-top: 3px;
+  }
+
+  .about-icon--style {
+    margin-left: 5px;
+  }
+
+  .about-icon--like {
+    margin-left: 12px;
+  }
+
+  .about-icon--handmade {
+    margin-left: 8px;
+    margin-top: 6px;
+  }
+
+  .about-icon--pack {
+    margin-left: 7px;
+  }
+}

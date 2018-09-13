@@ -1,0 +1,289 @@
+.caption {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &__title {
+    background: url("../img/mobile/bg-cap.jpg");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $title-color;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/mobile/bg-cap2x.jpg");
+      background-position: center -18px;
+      background-size: 575px auto;
+    }
+  }
+
+  &__title--text {
+    margin-top: 70px;
+    margin-bottom: 122px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    padding-top: 25px;
+    padding-bottom: 29px;
+    padding-left: 29px;
+    padding-right: 123px;
+    margin: 0;
+    text-align: start;
+
+    &:hover {
+      margin-top: -5px;
+      padding-top: 5px;
+      padding-bottom: 37px;
+    }
+}
+
+  &--furniture {
+    background: $lite-green;
+
+    &:hover {
+      background-color: #59d5bc;
+
+      .caption__text--furniture {
+
+      }
+
+      .caption__icon--furniture {
+        fill: #29a592;
+      }
+    }
+
+    &:active {
+      background-color: #59d5bc;
+
+      .caption__text--furniture {
+        color: #8be2d0;
+      }
+
+      .caption__icon--furniture {
+        fill: #44c0aa;
+      }
+    }
+}
+  &__icon {
+    fill: #3bb09d;
+    position: absolute;
+  }
+
+  &__icon--furniture {
+    bottom: 119px;
+    right: 37px;
+  }
+
+  &__icon--toy {
+    bottom: 20px;
+    right: 27px;
+  }
+
+  &__text--furniture {
+    color: $white;
+    padding-right: 115px;
+  }
+
+  &--toy {
+    background: $dark-green;
+
+    &:hover {
+      background-color: #46c1ae;
+
+      .caption__icon--toy {
+        fill: #239f8e;
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+
+      .caption__text--toy {
+        color: #8be2d0;
+      }
+
+      .caption__icon--toy {
+        fill: #37b2a0;
+      }
+    }
+}
+
+  &__text--toy {
+    padding-right: 115px;
+    color: $white;
+  }
+
+  &__line {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+  }
+
+  .caption {
+    background: url("../img/tablet/cap-tablet.jpg") no-repeat center;
+    width: 768px;
+    position: relative;
+    z-index: 1;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/tablet/cap-tablet2x.jpg");
+      background-size: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/tablet/line-tablet.png");
+      background-repeat: repeat-x;
+    }
+
+    &__wrapper {
+      width: 668px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      background: none;
+      padding: 0;
+    }
+
+    &__title--text {
+      margin-top: 156px;
+      font-size: 43px;
+      line-height: 50px;
+      padding-left: 107px;
+      padding-right: 100px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      flex-grow: 2;
+      padding-top: 27px;
+      padding-bottom: 42px;
+      padding-left: 36px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &--furniture {
+      width: 50%;
+    }
+
+    &--toy {
+      width: 50%;
+    }
+
+    &__icon {
+    bottom: 40px;
+  }
+
+  &__icon--furniture {
+    right: 420px;
+    bottom: 38px;
+  }
+
+  &__icon--toy {
+    right: 80px;
+  }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main {
+    width: 0;
+  }
+
+  .caption {
+    background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
+    width: 1150px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/desktop/cap-desktop2x.jpg");
+      background-size: 100%;
+    }
+
+    &::before {
+      height: 34px;
+      left: 13px;
+      bottom: -7px;
+      background-image: url("../img/desktop/line-desktop.png");
+    }
+
+    &__wrapper {
+      width: 1050px;
+    }
+
+    &__title--text {
+      margin-top: 160px;
+      margin-bottom: 360px;
+      font-size: 53px;
+      line-height: 57px;
+      padding-left: 267px;
+      padding-right: 264px;
+    }
+
+    &__text {
+      padding-right: 295px;
+    }
+
+    &--furniture {
+      width: 19%;
+      padding-right: 288px;
+    }
+
+    &--toy {
+      width: 16%;
+      padding-right: 322px;
+    }
+
+    &__icon {
+      bottom: 50px;
+    }
+
+    &__icon--furniture {
+      right: 611px;
+      bottom: 37px;
+    }
+
+    &__icon--toy {
+      right: 85px;
+      bottom: 37px;
+    }
+  }
+}

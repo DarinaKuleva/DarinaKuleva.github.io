@@ -1,0 +1,266 @@
+.catalog-item {
+  border: 1px solid #ececec;
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 24px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__description {
+    padding-left: 26px;
+    padding-right: 28px;
+    padding-top: 22px;
+  }
+
+  &__name {
+    font-size: 17px;
+    padding-botom: 19px;
+    padding-top: 5px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $text-color;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__text--big {
+    padding-bottom: 17px;
+  }
+
+   &__text--bigbas {
+    padding-bottom: 19px;
+  }
+
+  &__price {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &__footer {
+    padding-bottom: 28px;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+.icon-basket-catalog {
+  padding-right: 0;
+  fill: #e3e3e3;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #d0f1ea;
+  }
+}
+
+.catalog {
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 71px;
+    padding-bottom: 75px;
+    margin: 0;
+    background: $gray;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main--catalog {
+    margin-top: -82px;
+  }
+
+  .page-main {
+    width: 768px;
+    margin-top: -82px;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      position: relative;
+      padding-top: 97px;
+      padding-bottom: 91px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 24px;
+        background-image: url("../img/tablet/line-tablet.png");
+        background-repeat: repeat-x;
+      }
+    }
+  }
+
+
+  .catalog {
+    &__wrapper {
+      width: 668px;
+    }
+  }
+
+  .catalog-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    margin-top: 67px;
+
+    &__img {
+      width: 62%;
+      height: 334px;
+    }
+
+    &__description {
+      width: 50%;
+      padding-right: 33px;
+      padding-top: 23px;
+      padding-left: 21px;
+    }
+
+    &__name {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 15px;
+      margin: 0;
+      padding-bottom: 175px;
+      padding-top:4px;
+    }
+
+    &__text--big {
+      padding-bottom: 170px;
+      padding-top: 9px;
+    }
+
+    &__text--big {
+      padding-bottom: 156px;
+    }
+
+    &__text--bigbas {
+      padding-bottom: 150px;
+    }
+
+    &__price {
+      font-size: 17px;
+    }
+
+    &__footer {
+      padding-top: 23px;
+      padding-left: 4px;
+    }
+
+    &--basket {
+      margin-top: 51px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main--catalog {
+    margin-top: -49px;
+  }
+
+  .page-main {
+    width: 1150px;
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      padding-top: 95px;
+      padding-bottom: 117px;
+      position: relative;
+
+      &::before {
+        height: 34px;
+        background-image: url("../img/desktop/line-desktop.png");
+      }
+    }
+  }
+
+  .catalog {
+    &__wrapper {
+      width: 1050px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .catalog-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 114px;
+
+    &__description {
+      padding-top: 20px;
+      padding-left: 28px;
+      padding-right: 0;
+      width: 83%;
+    }
+
+    &__text {
+      padding-bottom: 38px;
+    }
+
+    &__text--big {
+      padding-bottom: 38px;
+      padding-top: 4px;
+    }
+
+    &__text--bigbas {
+      padding-top: 4px;
+      padding-bottom: 13px;
+    }
+
+    &__footer {
+      padding-top: 23px;
+      padding-bottom: 25px;
+      padding-left: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
