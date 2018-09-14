@@ -145,5 +145,16 @@
   .header {
     width: 320px;
     margin: 0 auto;
+
+
+  &__title {
+    font-size: 14px;
+    text-transform: capitalize;
   }
+
+  &__logo {
+    border: none;
+    width: 100px;
+  }
+}
 }

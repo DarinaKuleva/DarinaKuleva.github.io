@@ -95,5 +95,15 @@
   .portfolio {
     width: 320px;
     margin: 0 auto;
+
+    &__wrapper {
+      width: 260px;
+      margin: 0 auto;
+    }
   }
+
+  .wrapper {
+    width: 260px;
+    margin: 0 auto;
+}
 }
