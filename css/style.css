@@ -195,20 +195,20 @@ img {
       width: 320px;
       flex-wrap: wrap; }
   .footer-logo {
-    width: 121px;
-    margin: 0 auto; }
+    margin: 17px auto 3px auto;
+    order: 2; }
   .social {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    justify-content: space-around; }
+    justify-content: space-around;
+    order: 1; }
   .copyright {
     margin: 0 auto;
-    width: 50px; }
+    width: 50px;
+    padding-top: 45px; }
   .footer-copyright {
-    width: 250px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    order: 3; } }
 
 .page-main {
   display: flex;
@@ -350,6 +350,32 @@ img {
     margin-left: 10px;
     text-transform: none; }
 
+@media (max-width: 800px) and (min-width: 320px) {
+  .logo {
+    width: 300px;
+    font-size: 14px;
+    margin: 0 auto; }
+  .inform {
+    flex-wrap: wrap;
+    margin-bottom: 35px; }
+  .photo {
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 70px; }
+  .about-me {
+    width: 300px;
+    margin: 0 auto; }
+    .about-me__data::after {
+      bottom: -60px;
+      margin-left: -120px;
+      width: 240px; }
+  .contacts {
+    width: 300px;
+    margin: 0 auto;
+    order: 3;
+    margin-top: 38px; } }
+
 .header {
   background-color: #010914;
   padding-top: 30px;
@@ -480,7 +506,11 @@ img {
       height: 100px; }
   .btn-close {
     right: 30px;
-    top: 10px; } }
+    top: 10px; }
+  .mask__bottom {
+    width: 30%; }
+  .mask__right {
+    height: 5%; } }
 
 .about {
   width: 1150px;

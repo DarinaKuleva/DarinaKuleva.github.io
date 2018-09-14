@@ -91,27 +91,27 @@
   }
 
   .footer-logo {
-    width: 121px;
-    margin: 0 auto;
+    margin: 17px auto 3px auto;
+    order: 2;
   }
 
   .social {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
     justify-content: space-around;
+    order: 1;
 
   }
 
   .copyright {
     margin: 0 auto;
     width: 50px;
+    padding-top: 45px;
   }
 
   .footer-copyright {
-    width: 250px;
     margin: 0 auto;
+    order: 3;
   }
 }
 

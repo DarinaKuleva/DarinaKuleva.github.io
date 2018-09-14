@@ -159,8 +159,18 @@
   }
 }
 
-.btn-close {
-  right: 30px;
-  top: 10px;
+  .btn-close {
+    right: 30px;
+    top: 10px;
+  }
+
+  .mask {
+    &__bottom {
+      width: 30%;
+    }
+
+     &__right {
+      height: 5%;
+    }
 }
 }
