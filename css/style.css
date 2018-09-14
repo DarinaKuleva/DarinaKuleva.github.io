@@ -579,12 +579,12 @@ img {
 
 @media (max-width: 768px) {
   .about {
-    width: 720px;
+    width: 320px;
     margin: 0 auto; }
     .about__container {
       width: 100%;
       margin: 0 auto; }
     .about__promo {
-      width: 700px;
+      width: 300px;
       margin: 0 auto 50px auto;
       padding-top: 70px; } }
