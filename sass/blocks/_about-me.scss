@@ -173,7 +173,7 @@
     padding-left: 110px;
   }
 
-&__item-study::after {
+  &__item-study::after {
     content: "";
     position: absolute;
     left: 0;
@@ -211,20 +211,59 @@
 
     &__list {
       margin-left: 0;
+      text-align: center;
     }
 
     &__study {
-    width: 300px;
-    margin: 70px auto 0 auto;
-  }
+      width: 300px;
+      margin: 70px auto 0 auto;
+    }
+
+    &__title {
+      padding-top: 0;
+      margin-bottom: 0;
+      font-size: 32px;
+    }
+
+    &__text {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
 
+    &__item-title {
+      padding-left: 0;
+      text-align: center;
+      padding-bottom: 11px;
+      padding-top: 48px;
+    }
 
+     &__item-title::after {
+      left: 50%;
+      bottom: 50px;
+      margin-left: -25px;
+    }
+
+     &__item-automat::after {
+      margin-left: -28.5px;
+    }
+
+    &__item-study {
+      padding-left: 75px;
+      padding-top: 0;
+    }
+
+     &__item-study::after {
+      bottom: 17px;
+      left: 0;
+      margin-left: 0;
+    }
   }
   .about-text {
     padding: 25px 35px 25px 35px;
     font-size: 15px;
-}
+  }
 }
 
 
