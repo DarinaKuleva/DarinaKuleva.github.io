@@ -192,9 +192,9 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .about {
-    width: 320px;
+    width: 720px;
     margin: 0 auto;
 
     &__container {
@@ -203,7 +203,7 @@
     }
 
     &__promo {
-      width: 300px;
+      width: 700px;
       margin: 0 auto 50px auto;
       padding-top: 70px;
     }
