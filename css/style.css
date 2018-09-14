@@ -118,7 +118,9 @@ img {
 .footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #010914; }
+  background-color: #010914;
+  width: 1150px;
+  margin: 0 auto; }
   .footer__wrapper {
     width: 800px;
     margin: 0 auto;
@@ -176,6 +178,11 @@ img {
   color: #fff;
   opacity: 0.5;
   font-size: 14px; }
+
+@media (max-width: 800px) {
+  .footer {
+    width: 720px;
+    margin: 0 auto; } }
 
 .page-main {
   display: flex;
@@ -433,6 +440,11 @@ img {
   -webkit-transform: scale(1.02);
   -moz-transform: scale(1.02);
   -o-transform: scale(1.02); }
+
+@media (max-width: 800px) {
+  .header {
+    width: 720px;
+    margin: 0 auto; } }
 
 .about {
   width: 1150px;

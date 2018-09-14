@@ -139,3 +139,11 @@
   -moz-transform: scale(1.02);
   -o-transform: scale(1.02);
 }
+
+
+@media (max-width: 800px) {
+  .header {
+    width: 720px;
+    margin: 0 auto;
+  }
+}

@@ -2,6 +2,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #010914;
+  width: 1150px;
+  margin: 0 auto;
 
   &__wrapper {
     width: 800px;
@@ -75,4 +77,11 @@
   color: #fff;
   opacity: 0.5;
   font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    width: 720px;
+    margin: 0 auto;
+  }
 }
