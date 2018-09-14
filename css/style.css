@@ -106,9 +106,10 @@ li {
 body {
   margin: 0;
   padding: 0;
-  background-color: #010914;
+  background-color: #f1f1f1;
   font-family: 'Roboto';
-  cursor: default; }
+  cursor: default;
+  min-width: 320px; }
 
 img {
   max-width: 100%;
@@ -116,7 +117,8 @@ img {
 
 .footer {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background-color: #010914; }
   .footer__wrapper {
     width: 800px;
     margin: 0 auto;
@@ -184,7 +186,8 @@ img {
     height: 50vh; }
   .page-main__bottom {
     color: #f1f1f1;
-    width: 100%; }
+    width: 100%;
+    background-color: #010914; }
 
 .logo {
   color: #010914;
@@ -314,23 +317,28 @@ img {
     margin-left: 10px;
     text-transform: none; }
 
-.header__logo {
-  border: 1px solid #010914;
-  height: 150px;
-  width: 500px;
-  position: relative;
-  border-left: none;
-  border-right: none;
-  margin: 30px auto 30px auto; }
-
-.header__title {
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 7.2px;
-  text-transform: capitalize;
-  text-align: center;
-  color: #f1f1f1;
-  position: relative; }
+.header {
+  background-color: #010914;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1150px;
+  margin: 0 auto; }
+  .header__logo {
+    border: 1px solid #010914;
+    height: 150px;
+    width: 500px;
+    position: relative;
+    border-left: none;
+    border-right: none;
+    margin: 0 auto; }
+  .header__title {
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 7.2px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #f1f1f1;
+    position: relative; }
 
 .mask__border {
   opacity: 0.3;
@@ -427,8 +435,8 @@ img {
   -o-transform: scale(1.02); }
 
 .about {
-  width: 100%;
-  margin: 0;
+  width: 1150px;
+  margin: 0 auto;
   background-color: #f1f1f1; }
   .about__container {
     width: 1100px;
@@ -568,3 +576,15 @@ img {
   border: 1px solid #f1f1f1;
   padding: 30px 55px 30px 55px;
   position: relative; }
+
+@media (max-width: 768px) {
+  .about {
+    width: 720px;
+    margin: 0 auto; }
+    .about__container {
+      width: 100%;
+      margin: 0 auto; }
+    .about__promo {
+      width: 700px;
+      margin: 0 auto 50px auto;
+      padding-top: 70px; } }

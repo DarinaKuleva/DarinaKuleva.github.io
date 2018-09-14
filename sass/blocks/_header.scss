@@ -1,4 +1,9 @@
 .header {
+  background-color: #010914;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1150px;
+  margin: 0 auto;
 
   &__logo {
     border: 1px solid #010914;
@@ -7,7 +12,7 @@
     position: relative;
     border-left: none;
     border-right: none;
-    margin: 30px auto 30px auto;
+    margin: 0 auto;
   }
 
   &__title {
