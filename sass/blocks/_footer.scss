@@ -85,7 +85,33 @@
     margin: 0 auto;
 
   &__wrapper {
-    width: 260px;
+    width: 320px;
+    flex-wrap: wrap;
   }
+  }
+
+  .footer-logo {
+    width: 121px;
+    margin: 0 auto;
+  }
+
+  .social {
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+  }
+
+  .copyright {
+    margin: 0 auto;
+    width: 50px;
+  }
+
+  .footer-copyright {
+    width: 250px;
+    margin: 0 auto;
   }
 }
+
+

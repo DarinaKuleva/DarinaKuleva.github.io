@@ -148,13 +148,19 @@
 
 
   &__title {
-    font-size: 14px;
-    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 38px;
   }
 
   &__logo {
     border: none;
-    width: 100px;
+    width: 260px;
+    height: 100px;
   }
+}
+
+.btn-close {
+  right: 30px;
+  top: 10px;
 }
 }

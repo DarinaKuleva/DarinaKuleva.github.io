@@ -199,16 +199,32 @@
     margin: 0 auto;
 
     &__container {
-      width: 260px;
+      width: 320px;
       margin: 0 auto;
     }
 
     &__promo {
-      width: 260px;
+      width: 320px;
       margin: 0 auto 50px auto;
       padding-top: 70px;
     }
+
+    &__list {
+      margin-left: 0;
+    }
+
+    &__study {
+    width: 300px;
+    margin: 70px auto 0 auto;
   }
+
+
+
+  }
+  .about-text {
+    padding: 25px 35px 25px 35px;
+    font-size: 15px;
+}
 }
 
 
