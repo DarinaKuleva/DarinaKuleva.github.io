@@ -558,7 +558,7 @@ img {
     width: 260px;
     height: 100px; }
   .btn-close {
-    right: 0;
+    right: 5px;
     top: 14px; }
   .mask__bottom {
     width: 30%; }
