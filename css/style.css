@@ -558,8 +558,8 @@ img {
     width: 260px;
     height: 100px; }
   .btn-close {
-    right: 30px;
-    top: 10px; }
+    right: 0;
+    top: 14px; }
   .mask__bottom {
     width: 30%; }
   .mask__right {
