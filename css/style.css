@@ -559,7 +559,8 @@ img {
     height: 100px; }
   .btn-close {
     right: 5px;
-    top: 14px; }
+    top: 14px;
+    opacity: 0.3; }
   .mask__bottom {
     width: 30%; }
   .mask__right {
