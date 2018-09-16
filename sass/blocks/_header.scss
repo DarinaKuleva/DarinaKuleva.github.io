@@ -2,8 +2,7 @@
   background-color: #010914;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 1150px;
-  margin: 0 auto;
+  min-width: 1200px;
 
   &__logo {
     border: 1px solid #010914;
@@ -140,12 +139,15 @@
   -o-transform: scale(1.02);
 }
 
-
-@media (max-width: 800px) {
+@media only screen and (max-width: 900px){
   .header {
-    width: 320px;
-    margin: 0 auto;
+    min-width: 100vw;
+  }
+}
 
+@media (max-width: 600px) {
+  .header {
+    min-width: 100vw;
 
   &__title {
     font-size: 20px;

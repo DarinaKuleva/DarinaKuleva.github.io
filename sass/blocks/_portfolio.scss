@@ -1,6 +1,5 @@
 .portfolio {
-  width: 1150px;
-  margin: 0 auto;
+  min-width: 1200px;
 
   &__list {
     display: flex;
@@ -91,7 +90,23 @@
   margin: 0 auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .portfolio {
+    min-width: 100vw;
+  }
+
+  &__wrapper {
+      width: 560px;
+      margin: 0 auto;
+    }
+
+  .wrapper {
+    width: 560px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
   .portfolio {
     width: 320px;
     margin: 0 auto;
