@@ -205,12 +205,10 @@ img {
     width: 50px; } }
 
 @media (max-width: 700px) {
-  .footer {
-    min-width: 100vw; }
-    .footer__wrapper {
-      width: 320px;
-      margin: 0 auto;
-      flex-wrap: wrap; }
+  .footer__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    flex-wrap: wrap; }
   .footer-logo {
     margin: 17px auto 3px auto;
     order: 2; }
@@ -552,15 +550,13 @@ img {
     min-width: 100vw; } }
 
 @media (max-width: 700px) {
-  .header {
-    min-width: 100vw; }
-    .header__title {
-      font-size: 20px;
-      padding-top: 38px; }
-    .header__logo {
-      border: none;
-      width: 260px;
-      height: 100px; }
+  .header__title {
+    font-size: 20px;
+    padding-top: 38px; }
+  .header__logo {
+    border: none;
+    width: 260px;
+    height: 100px; }
   .btn-close {
     right: 30px;
     top: 10px; }
