@@ -114,7 +114,7 @@
     -o-transform: scale(1.02);
   }
 
- &__data::after {
+  &__data::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -218,6 +218,7 @@
       margin-top: 35px;
       margin-bottom: 65px;
     }
+
     &__bottom {
       padding-bottom: 60px;
     }
@@ -241,7 +242,6 @@
       padding-top: 10px;
       margin-left: 93px;
     }
-
   }
 
   .inform {
@@ -263,7 +263,6 @@
   }
 
   .page-main {
-
     &__top {
       height: 300px;
       margin-top: -83px;
@@ -274,7 +273,6 @@
       margin-top: 0;
     }
   }
-
 }
 
 

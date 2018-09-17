@@ -1,6 +1,4 @@
 .about {
-  /*width: 1150px;
-  margin: 0 auto;*/
   background-color: #f1f1f1;
 
   &__container {
@@ -69,9 +67,10 @@
 
   &__item-adapt {
     position: relative;
+
   }
 
-&__item-adapt::after {
+  &__item-adapt::after {
     content: "";
     position: absolute;
     left: 0;
@@ -82,11 +81,16 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  &__text-adapt {
+    padding-right: 15px;
+  }
+
   &__item-automat {
     position: relative;
   }
 
-&__item-automat::after {
+  &__item-automat::after {
     content: "";
     position: absolute;
     left: 0;
@@ -102,7 +106,7 @@
     position: relative;
   }
 
-&__item-dynamics::after {
+  &__item-dynamics::after {
     content: "";
     position: absolute;
     left: 0;
@@ -118,7 +122,7 @@
     position: relative;
   }
 
-&__item-graph::after {
+  &__item-graph::after {
     content: "";
     position: absolute;
     left: 0;
@@ -134,7 +138,7 @@
     position: relative;
   }
 
-&__item-instrument::after {
+  &__item-instrument::after {
     content: "";
     position: absolute;
     left: 0;
@@ -228,6 +232,10 @@
 
     &__item-adapt::after {
       left: 155px;
+    }
+
+    &__text-adapt {
+    padding-right: 0;
     }
 
     &__item-automat::after {

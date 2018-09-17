@@ -567,8 +567,6 @@ img {
     height: 5%; } }
 
 .about {
-  /*width: 1150px;
-  margin: 0 auto;*/
   background-color: #f1f1f1; }
   .about__container {
     width: 1100px;
@@ -626,6 +624,8 @@ img {
     background-image: url("../img/about-adapt.svg");
     background-repeat: no-repeat;
     background-position: 0 0; }
+  .about__text-adapt {
+    padding-right: 15px; }
   .about__item-automat {
     position: relative; }
   .about__item-automat::after {
@@ -732,6 +732,8 @@ img {
       left: 198px; }
     .about__item-adapt::after {
       left: 155px; }
+    .about__text-adapt {
+      padding-right: 0; }
     .about__item-automat::after {
       left: 144px;
       bottom: 4px; }
