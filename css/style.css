@@ -80,7 +80,7 @@
   .portfolio {
     min-width: 100vw; }
   __wrapper {
-    width: 560px;
+    width: 100%;
     margin: 0 auto; }
   .wrapper {
     width: 560px;
