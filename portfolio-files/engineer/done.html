@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Done!</title>
+  </head>
+  <body>
+    <svg style="display:none">
+      <symbol id="icon-close" viewBox="0 0 23 23">
+        <defs>
+          <path id="5n22a" d="M344.207 31.5L355 42.293l-.707.707L343.5 32.207 332.707 43l-.707-.707L342.793 31.5 332 20.707l.707-.707L343.5 30.793 354.293 20l.707.707z"/>
+        </defs>
+        <g>
+          <g transform="translate(-332 -20)">
+            <use fill="#fff" xlink:href="#5n22a"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-done" viewBox="0 0 55 55">
+        <defs>
+          <path id="lelja" d="M215 194.5c0 15.164-12.337 27.5-27.5 27.5S160 209.664 160 194.5s12.337-27.5 27.5-27.5 27.5 12.336 27.5 27.5zm-13.874-11.147l-16.466 18.154-9.92-7.777a1.087 1.087 0 0 0-1.505.164 1.036 1.036 0 0 0 .167 1.476l10.714 8.4c.197.154.434.23.67.23.295 0 .59-.12.8-.353l17.143-18.9a1.034 1.034 0 0 0-.089-1.48 1.086 1.086 0 0 0-1.514.086z"/>
+        </defs>
+        <g>
+          <g transform="translate(-160 -167)">
+            <use fill="#98e162" xlink:href="#lelja"/>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <main class="done-page">
+      <div class="close">
+        <svg width="23px" height="23px">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </div>
+      <section class="done">
+        <div class="done__img">
+          <svg width="55px" height="55px">
+            <use xlink:href="#icon-done"></use>
+          </svg>
+        </div>
+        <div class="done__info">
+          <h1 class="done__title">Заявка успешно отправлна</h1>
+          <h2 class="done__text">Наш менеджер свяжется с вами в ближайшее время</h2>
+          <h2 class="done__phone">8 (812) 965-06-81</h2>
+          <h4 class="done__time">Пн-Пт 10-18</h4>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

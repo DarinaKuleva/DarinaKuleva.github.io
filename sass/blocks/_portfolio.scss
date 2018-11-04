@@ -11,7 +11,6 @@
   }
 
   &__item {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
@@ -26,10 +25,9 @@
 
   &__info {
     background-color: rgba(255,255,255,0.9);
-    top: -400px;
-    height: 352px;
+    top: -401px;
+    height: 353px;
     transition-duration: 0.15s;
-    padding: 10px 0;
     position: absolute;
     text-align: center;
     color: #010914;
