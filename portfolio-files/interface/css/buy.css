@@ -1,0 +1,746 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotolight.woff2") format("woff2"), url("../fonts/Robotolight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotothin.woff2") format("woff2"), url("../fonts/Robotothin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold; }
+
+a 
+{
+  text-decoration: none;
+  cursor: default;
+  color: #fff; 
+}
+
+li 
+{
+  list-style-type: none; 
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #040812;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%; 
+}
+
+img 
+{
+  max-width: 100%;
+  height: auto; 
+}
+
+html,
+body 
+{
+  height: 100%;
+  min-width: 360px;
+  max-width: 100%;
+}
+
+/*.alert
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+}*/
+
+.nav
+{
+  position: absolute;
+  width: 100%;
+  height: 51px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav_list
+{
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav--item
+{
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  width: 33.33%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav--fixed 
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; 
+}
+
+.solutions
+{
+  display: block;
+  max-width: 100%;
+  min-width: 360px;
+}
+
+.solutions .text-available
+{
+  font-weight: 300;
+  font-size: 36px;
+  color: #787474;
+  margin-top: 112px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.solutions .text-solutions
+{
+  font-weight: 700;
+  font-size: 54px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 32px rgba(199, 179, 241, 0.6);
+  margin-top: 0px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.slider
+{
+  display: block;
+  margin-top: 64px;
+}
+
+.slider .scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-scrollbar-display: none;
+}
+
+.slider .option_1
+{
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.slider .option_1 .header
+{
+  width: 280px;
+  height: 100px;
+  background: #0A4B3E;
+}
+
+.slider .option_1 .main
+{
+  width: 280px;
+  height: 300px;
+  background: #000;
+}
+
+.slider .option_1 .header .text-three
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8DFFF3;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.slider .option_1 .header .text-free
+{
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8DFFF3;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.slider .option_1 .main .text-one
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #5BB3A8;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
+.slider .option_1 .main .text-two
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #5BB3A8;
+  margin: 0 auto;
+}
+
+.slider .option_1 .main .text-price
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8DFFF3;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.slider .option_2
+{
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  margin-left: 8px;
+  flex: 0 0 auto;
+}
+
+.slider .option_2 .header
+{
+  width: 280px;
+  height: 100px;
+  background: #4909A1;
+}
+
+.slider .option_2 .main
+{
+  width: 280px;
+  height: 300px;
+  background: #000;
+}
+
+.slider .option_2 .header .text-unlim
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #AE83FC;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.slider .option_2 .header .text-power
+{
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #AE83FC;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.slider .option_2 .main .text-one
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #BEA8FB;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
+.slider .option_2 .main .text-two
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #BEA8FB;
+  margin: 0 auto;
+}
+
+.slider .option_2 .main .text-price
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #9950FF;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.slider .option_3
+{
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  margin-left: 8px;
+  flex: 0 0 auto;
+}
+
+.slider .option_3 .header
+{
+  width: 280px;
+  height: 100px;
+  background: #8C0A60;
+}
+
+.slider .option_3 .main
+{
+  width: 280px;
+  height: 300px;
+  background: #000;
+}
+
+.slider .option_3 .header .text-zerg
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #F77DCE;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.slider .option_3 .header .text-rush
+{
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #F77DCE;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.slider .option_3 .main .text-one
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #A04080;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
+.slider .option_3 .main .text-two
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #A04080;
+  margin: 0 auto;
+}
+
+.slider .option_3 .main .text-price
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #CC2794;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.contacts
+{
+  display: block;
+  max-width: 100%;
+  min-width: 360px;
+}
+
+.contacts .text-me
+{
+  font-weight: 300;
+  font-size: 36px;
+  color: #787474;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.contacts .text-contact
+{
+  font-weight: 700;
+  font-size: 54px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 32px rgba(199, 179, 241, 0.6);
+  margin-top: 64px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.contact-form
+{
+  display: block;
+  max-width: 260px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-form .oneline
+{
+  background: #091229;
+  width: 248px;
+  height: 32px;
+  color: #F1F1F1;
+  border: 0px;
+  padding: 0px 0px 0px 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.contact-form .msg
+{
+  background: #091229;
+  width: 252px;
+  height: 128px;
+  color: #F1F1F1;
+  border: 0px;
+  padding: 12px 0px 0px 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  margin-top: 16px;
+  resize: none;
+}
+
+.contact-form .btn
+{
+  background: #1C3980;
+  width: 260px;
+  height: 60px;
+  color: #F2F2F2;
+  border: 0px;
+  /*padding: 8px 12px;*/
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  letter-spacing: 0.05em;
+}
+
+.contact-form .btn-send
+{
+  background: #286e27;
+}
+
+.contact-form .oneline:focus
+{
+  background-color: #2751bc;
+}
+
+.contact-form .msg:focus
+{
+  background-color: #2751bc;
+}
+
+.footer
+{
+  display: block;
+  max-width: 100%;
+  min-width: 360px; 
+}
+
+.footer .footer-text
+{
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #404040;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 12px;
+}
+
+@media (min-width: 768px)
+{
+  .solutions .text-available
+  {
+    font-size: 48px;
+    margin-top: 128px;
+    margin-bottom: 42px;
+  }
+
+  .solutions .text-solutions
+  {
+    font-size: 72px;
+  }
+
+  .slider
+  {
+    margin-top: 96px;
+  }
+
+  .contacts .text-me
+  {
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+
+  .contacts .text-contact
+  {
+    font-size: 72px;
+    margin-top: 128px;
+    margin-bottom: 42px;
+  }
+
+  .contact-form
+  {
+    max-width: 568px;
+  }
+
+  .contact-form .oneline
+  {
+    width: 556px;
+    height: 48px;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .contact-form .msg
+  {
+    width: 560px;
+    height: 144px;
+    padding: 12px 0px 0px 8px;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .contact-form .btn
+  {
+    width: 568px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .footer .footer-text
+  {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px)
+{
+  .nav_list
+  {
+    justify-content: center;
+    width: 540px;
+    margin: 0 auto;
+  }
+
+  .slider
+  {
+    margin-top: 48px;
+  }
+
+  .slider .scrolling-wrapper 
+  {
+    justify-content: center;
+    height: 450px;
+  }
+
+  .slider .option_1
+  {
+    opacity: 0.5;
+    transform: scale(0.95);
+    transition: all 1s ease-out;
+  }
+
+  .slider .option_2
+  {
+    margin-left: 64px;
+    transform: scale(1);
+    transition: all 1s ease-out;
+    padding-top: 50px;
+  }
+
+  .slider .option_3
+  {
+    margin-left: 64px;
+    opacity: 0.5;
+    transform: scale(0.95);
+    transition: all 1s ease-out;
+  }
+
+  .slider .animate_1
+  {
+    opacity: 1;
+    transform: scale(1);
+    padding-left: 128px;
+    padding-top: 50px;
+  }
+
+  .slider .animate_1_2
+  {
+    padding-top: 25px;
+    opacity: 0.5;
+    margin-left: 64px;
+    transform: scale(0.95);
+  }
+
+  .slider .animate_1_3
+  {
+    margin-left: 16px;
+    transform: scale(0.9);
+  }
+
+  .slider .animate_3
+  {
+    opacity: 1;
+    transform: scale(1);
+    padding-right: 128px;
+    padding-top: 50px;
+  }
+
+  .slider .animate_3_1
+  {
+    transform: scale(0.9);
+  }
+
+  .slider .animate_3_2
+  {
+    margin-left: 16px;
+    padding-top: 25px;
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+
+}
+
+.slider .option_2 .animate
+{
+  transform: scale(1.05);
+  padding-top: 32px;
+}
+
+
+
+.slider .option_3 .animate
+{
+  padding-top: 50px;
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<title>Interface</title>
+		<meta name="theme-color" content="#000000" />
+	</head>
+	<body>
+		<svg style="display:none">
+			<polygon points="179.836,0.839 120.415,0.839 239.257,148.439 120.415,297.839 179.836,297.839 298.678,148.439  " fill="#FFFFFF"/>
+			</simbol>
+			<symbol id="icon-down" viewBox="0 0 80 40">
+				<path d="M80 0H0L40 40L80 0Z" fill="#2C96E3"/>
+				<path d="M80 0H0L40 40L80 0Z" fill="#A84EEE"/>
+				<path d="M80 0H0L40 40L80 0Z" fill="#F2F2F2"/>
+				</path>
+				</path>
+				</path>
+			</symbol>
+			<symbol id="properties-line" viewBox="0 0 58 3">
+				<line x1="1.31134e-07" y1="1.5" x2="58" y2="1.50001" stroke="white" stroke-width="3"/>
+				<line x1="1.31134e-07" y1="1.5" x2="58" y2="1.50001" stroke="white" stroke-width="3"/>
+			</symbol>
+			<symbol id="close-icon" viewBox="0 0 78 78">
+				<path d="M18.9393 59.8302L57.8302 20.9393M21.0607 20.9393L59.9515 59.8302M76 39C76 59.4345 59.4345 76 39 76C18.5655 76 2 59.4345 2 39C2 18.5655 18.5655 2 39 2C59.4345 2 76 18.5655 76 39Z" stroke="#818181" stroke-width="3"/>
+			</symbol>
+		</svg>
+		<main>
+			<section class="promo">
+				<div class="promo__title">
+					<h2 class="promo__text promo--desc">lineage ii modification</h2>
+					<h1 class="promo__text promo--logo">interface</h1>
+					<h2 class="promo__text promo--deadz">by deadz</h2>
+				</div>
+				<div class="promo__btns">
+					<button class="promo--watch-btn" onclick="location.href='https://www.youtube.com/watch?v=sFR_7wm5P30';">
+					watch
+					</button>
+				</div>
+				<div class="bg__video">
+					<div class="video__overlay">
+					</div>
+					<video loop muted autoplay poster="video/dedz.png">
+	        	<source src="video/dedz.mp4" type="video/mp4">
+	        	<source src="video/dedz.webm" type="video/webm">
+	      	</video>
+      	</div>
+			</section>
+			<div class="nav-wrapper">
+				<div class="nav">
+					<ul class="nav__list ">
+						<li class="nav--item"><a href="./updates.html">updates</a></li>
+						<li class="nav--item"><a href="./">servers</a></li>
+						<li class="nav--item"><a href="./buy.html" class="nav--buy">buy</a></li>
+					</ul>
+				</div>
+			</div>
+			<section class="features">
+				<section class="features__slogan">
+					<div class="features__slogan-conteiner">
+						<div class="features__slogan-title">
+							<h1 class="features__slogan-lite">make</h1>
+							<h1 class="features__slogan-dark"> your</h1>
+						</div>
+						<div class="features__slogan-title">
+							<h1 class="features__slogan-dark"> life</h1>
+							<h1 class="features__slogan-lite"> easier</h1>
+						</div>
+					</div>
+					<p class="features__slogan-text">with this automatic functions</p>
+				</section>
+			</section>
+			<section class="properties item-enchant" id="_item">
+			<div class="wow bounceInUp properties__title-ench">
+				<h2 id="item-text" class="properties__title properties__title-line">item enchant</h2>
+				</div>
+				<div class="dinamic dinamic-enchant">
+					<img id="img_item" src="img/item-enchant.png" width="250px" height="318px" class="wow bounceInUp">
+					<section id="enchant_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(enchant_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+
+			</section>
+			<section class="properties attribute" id="_att">
+			<div class="wow bounceInUp">
+				<h2 id="att-text" class="properties__title properties__title-att properties__title-line">attribute</h2>
+				</div>
+				<div class="dinamic dinamic-attribute">
+					<img id="img_att" src="img/attribute.png" width="247px" height="332px" class="wow bounceInUp">
+					<section id="attribute_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(attribute_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties augmentation" id="_aug">
+				<h2 id="aug-text" class="properties__title properties__title-line">augmentation</h2>
+				<div class="dinamic dinamic-augmentation">
+					<div id="aug_margin" class="augmentation__img">
+						<img id="img_aug_1" src="img/augmentation-top.png" width="318px" height="240px" class="augmentation__img-top">
+						<img id="img_aug_2" src="img/augmentation-bottom.png" width="184px" height="262px">
+					</div>
+					<section id="aug_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(aug_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties skill-enchant" id="_ench">
+				<h2 id="skill-text" class="properties__title properties__title-line">skill enchant</h2>
+				<div id="top-skill" class="dinamic dinamic-skill">
+					<img id="img_skill" src="img/skill-enchant.png" width="328px" height="214px">
+					<section id="skill_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(skill_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties castbars">
+				<h3 class="properties__text castbars__text castbars__text-small">brand new</h3>
+				<h2 class="properties__title castbars__title">castbars</h2>
+				<div class="castbars__box">
+					<div class="properties__text-conteiner castbars__elegant-conteiner">
+						<h3 class="properties__text castbars__text-bold">elegant <span class="properties__text castbars__text">yours</span></h3>
+					</div>
+					<img src="img/castbars-top.png" width="225px" height="21px" class="wow bounceInRight">
+					<div class="properties__text-conteiner castbars__colorful-conteiner">
+						<h3 class="properties__text castbars__text">colorful
+							<span class="properties__text castbars__text-bold">theirs</span>
+						</h3>
+					</div>
+					<img src="img/castbars-bottom.png" width="231px" height="271px" class="castbars__img-bottom wow bounceInLeft">
+				</div>
+			</section>
+			<section class="properties cycled-macro" id="_macro">
+			<div class="wow bounceInUp">
+				<h2 id="cycl-text" class="properties__title properties__title-macro properties__title-line">cycled macro</h2>
+				</div>
+				<div class="dinamic dinamic-cycled">
+					<img id="img_cycl" src="img/cycled-macro.png" width="284px" height="325px" class="wow bounceInUp">
+					<section id="macro_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(macro_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties potions" id="_pots">
+			<div class="wow bounceInUp properties__title-potions">
+				<h2 id="pot-text" class="properties__title properties__title-line-small">potions</h2>
+				</div>
+				<div class="dinamic dinamic-potions">
+					<img id="img_pot" src="img/potions.png" width="284px" height="325px" class="wow bounceInUp">
+					<section id="potions_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(potions_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties radar">
+				<div class="radar__box">
+					<h2 class="properties__title radar__title-top">radar</h2>
+					<h3 class="properties__text radar__text">control the battlefield</h3>
+					<div class="radar__container">
+						<ul id="slider-radar" class="radar__slider">
+							<li>
+								<div>
+									<img src="img/radar.png">
+									<h2 class="radar__title">window</h2>
+									<p class="radar__text-slider">Detect players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="img/radar.png">
+									<h2 class="radar__title">options</h2>
+									<p class="radar__text-slider">fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode. fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode. fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode. fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="img/radar.png">
+									<h2 class="radar__title">scanner</h2>
+									<p class="radar__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode. fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+						</ul>
+						<button id="radar__prev" class="radar__prev"><img src="img/icon-next.svg" width="32px" height="25px"></button>
+						<button id="radar__next" class="radar__next"><img src="img/icon-next.svg" width="32px" height="25px"></button>
+					</div>
+
+					<div class="radar__container-tablet">
+						<img id="radar-img-tablet" src="img/radar.png">
+						<ul id="button-radar" class="radar__button">
+							<li>
+								<div id="btnWindow">
+									<h2 class="radar__title">window</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnOpt">
+									<h2 class="radar__title">options</h2>
+							</li>
+							<li>
+								<div id="btnScan">
+									<h2 class="radar__title">scanner</h2>
+								</div>
+							</li>
+						</ul>
+
+						<p id="radar-text-tablet" class="radar__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+					</div>
+
+				</div>
+			</section>
+			<section class="properties party" id="_party">
+			<div class="wow bounceInUp properties__title-party">
+				<h2 id="party-text" class="properties__title properties__title-line-party">party</h2>
+				</div>
+				<div class="dinamic dinamic-party">
+					<img id="img_party" src="img/party.png" width="308px" height="501px" class="wow bounceInUp">
+					<section id="party_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(party_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties status" id="_status">
+			<div class="wow bounceInUp">
+				<h2 id="status-text" class="properties__title properties__title-status properties__title-line-small">status</h2>
+				</div>
+				<div class="dinamic dinamic-status">
+					<img id="img_status" src="img/status.png" width="237px" height="160px" class="wow bounceInUp">
+					<section id="status_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Smart enchant</h3>
+								<p class="info__block-text">Enchant from stone, crystal or both.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Armor enchant</h3>
+								<p class="info__block-text">Enhance your armor piece with 3 elements in a matter of seconds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Weapon enchant</h3>
+								<p class="info__block-text">Go straight for 300, avoid annoying clicking one by one.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(status_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties olympiad">
+				<div class="olympiad__box">
+					<h2 class="properties__title olympiad__title-top">olympiad</h2>
+					<h3 class="properties__text olympiad__text">be the best</h3>
+					<div class="olympiad__container">
+						<ul id="slider-olympiad" class="olympiad__slider">
+							<li>
+								<div>
+									<img src="img/olimpiad.png">
+									<h2 class="olympiad__title">window</h2>
+									<p class="olympiad__text-slider">Detect players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="img/olimpiad.png">
+									<h2 class="olympiad__title">options</h2>
+									<p class="olympiad__text-slider">fgfdgdf players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="img/olimpiad.png">
+									<h2 class="olympiad__title">scanner</h2>
+									<p class="olympiad__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="img/olimpiad.png">
+									<h2 class="olympiad__title">scanner2</h2>
+									<p class="olympiad__text-slider">tttttt players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+								</div>
+							</li>
+						</ul>
+						<button id="olympiad__prev" class="olympiad__prev"><img src="img/icon-next.svg" width="25px" height="32px"></button>
+						<button id="olympiad__next" class="olympiad__next"><img src="img/icon-next.svg" width="25px" height="32px"></button>
+					</div>
+						<div class="olympiad__container-tablet">
+						<img id="oly-img-tablet" src="img/olimpiad.png">
+						<ul id="button-olympiad" class="olympiad__button">
+							<li>
+								<div id="btnWindowOly">
+									<h2 class="olympiad__title">window</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnTarget">
+									<h2 class="olympiad__title">target</h2>
+							</li>
+							<li>
+								<div id="btnItems">
+									<h2 class="olympiad__title">items</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnSumm">
+									<h2 class="olympiad__title">summon</h2>
+								</div>
+							</li>
+						</ul>
+
+						<p id="oly-text-tablet" class="olympiad__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+					</div>
+
+				</div>
+			</section>
+			<section class="properties expansions">
+				<h2 class="properties__title expansions__title-top">expansions</h2>
+				<h3 class="properties__text expansions__text-top">feel the difference</h3>
+			</section>
+			<section class="properties buffs">
+				<div class="buffs__box">
+					<img src="img/debuff.png" width="149px" height="116px" class="properties__img buffs__img">
+					<div class="expansions__line buffs__line">
+						<h2 class="expansions__title expansions__title-buffs">buffs</h2>
+						<h3 class="expansions__text">debuff timer</h3>
+						<h3 class="expansions__text">two size option</h3>
+					</div>
+				</div>
+			</section>
+			<section class="properties target">
+				<div class="target__box">
+					<img src="img/target.png" width="182px" height="91px" class="properties__img target__img">
+					<div class="expansions__line target__line">
+						<h2 class="expansions__title expansions__title-target">target</h2>
+						<h3 class="expansions__text">invite button</h3>
+						<h3 class="expansions__text">class as title</h3>
+						<h3 class="expansions__text">class icon</h3>
+					</div>
+				</div>
+			</section>
+			<section class="properties shortcuts">
+				<div class="shortcuts__img">
+					<img src="img/shortcut-top.png" width="344px" height="230px" class="shortcuts__img-top">
+					<img src="img/shortcut-bottom.png" width="344px" height="230px" class="properties__img">
+				</div>
+				<div class="shortcuts__img-tablet">
+					<img src="img/shortcut-left.png" width="374px" height="230px">
+					<img src="img/Shortcut-right.png" width="235px" height="194px">
+				</div>
+				<div class="expansions__line shortcuts__line">
+					<h2 class="expansions__title">shortcuts</h2>
+					<h3 class="expansions__text">extra hotkey binds</h3>
+					<h3 class="expansions__text">two extra panel</h3>
+					<h3 class="expansions__text">talisman panel</h3>
+					<h3 class="expansions__text">6x12 shortcuts</h3>
+				</div>
+			</section>
+			<section class="properties inventory">
+				<img src="img/inventory.png" width="344px" height="409px" class="properties__img inventory__img">
+				<img src="img/inventory-tablet.png" width="589px" height="410px" class="properties__img inventory__img-tablet">
+				<img src="img/inventory-desk.png" width="589px" height="410px" class="properties__img inventory__img-desk">
+				<div class="expansions__line">
+					<h2 class="expansions__title">inventory</h2>
+					<h3 class="expansions__text">expendable slots</h3>
+					<h3 class="expansions__text">quick item destroy</h3>
+				</div>
+			</section>
+			<section class="properties screen-damage">
+				<div class="screen-damage__container">
+					<ul id="slider" class="screen-damage__slider">
+						<li><img src="img/screen-damage-1.png" alt="" class="test" /></li>
+						<li><img src="img/screen-damage-2.png" alt="" class="test"/></li>
+					</ul>
+				</div>
+				<div class="screen-damage__container-desk">
+					<ul id="slider" class="screen-damage__slider">
+						<li><img src="img/screen-damage_desk-1.png" alt="" class="test" /></li>
+						<li><img src="img/screen-damage_desk-2.png" alt="" class="test"/></li>
+					</ul>
+				</div>
+				<ul id="dots" class="screen-damage__dots">
+					<li class="active"></li>
+					<li></li>
+				</ul>
+				<div class="expansions__line">
+					<h2 class="expansions__title screen-damage__title">screen damage</h2>
+					<h3 class="expansions__text screen-damage__text">transfer pain <br><span class="expansions__text screen-damage__small-text">has been took into account</span></h3>
+
+				</div>
+			</section>
+			<section class="properties canceled-buffs">
+				<img src="img/canceled-buffs.png" width="230px" height="75px" class="properties__img canceled-buffs__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title canceled-buffs__title">canceled buffs</h2>
+					<h3 class="expansions__text canceled-buffs__text">rebuff them by clicking on icons</h3>
+				</div>
+			</section>
+			<section class="properties intellegent">
+				<img src="img/intellegent.png" width="326px" height="90px" class="properties__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title intellegent__title">intellegent party control</h2>
+					<h3 class="expansions__text intellegent__text">usefull for party leaders</h3>
+				</div>
+			</section>
+			<section class="properties automatic">
+				<img src="img/automatic.png" width="168px" height="86px" class="properties__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title automatic__title">automatic shots & souls</h2>
+					<h3 class="expansions__text automatic__text">keeps your soul level at 40</h3>
+				</div>
+			</section>
+			<section class="properties settings">
+				<img src="img/settings.png" width="344px" height="434px" class="properties__img settings__img">
+				<img src="img/settings-tablet.png" width="468px" height="434px" class="properties__img settings__img-tablet">
+				<img src="img/settings-desk.png" width="468px" height="434px" class="properties__img settings__img-desk">
+				<div class="expansions__line wow bounceInUp">
+					<h2 class="expansions__title">settings</h2>
+					<h3 class="expansions__text settings__text">customize interface as you wish</h3>
+				</div>
+			</section>
+			<section class="properties dnk">
+				<img src="img/dnk.png" width="112px" height="178px">
+				<h3 class="dnk__text">Interface by DEADZ © 2017 - 18</h3>
+			</section>
+		</main>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function closeBtn(x) {
+				if (x.style.display === "none") {
+						x.style.display = "block";
+				} else {
+						x.style.display = "none";
+				}
+			}
+
+		</script>
+		<script type="text/javascript" src="js/slider-screen.js"></script>
+		<script type="text/javascript" src="js/slider-olympiad.js"></script>
+		<script type="text/javascript" src="js/slider-radar.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+		<script type="text/javascript" src="js/over-tex.js"></script>
+		<script type="text/javascript" src="js/toggle-radar.js"></script>
+		<script type="text/javascript" src="js/toggle-oly.js"></script>
+		<script>
+			wow = new WOW(
+				{
+					animateClass: 'animated',
+					offset:       100,
+					callback:     function(box) {
+						console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+					}
+				}
+			);
+			wow.init();
+			document.getElementById('moar').onclick = function() {
+				var section = document.createElement('section');
+				section.className = 'section--purple wow fadeInDown';
+				this.parentNode.insertBefore(section, this);
+			};
+		</script>
+	</body>
+</html>

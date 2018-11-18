@@ -1,0 +1,39 @@
+@keyframes color-animation
+{
+	0% {background: #FF0000;} /*red*/
+	15% {background: #ff6600;}/*orrange*/
+	25% {background: #ffff00;}/*yellow*/
+	35% {background: #00FF00;}/*green*/
+	45% {background: #00ffff;}/*aqua*/
+	55% {background: #0099ff;}/*light blue*/
+	65% {background: #0000FF;}/*blue*/
+	75% {background: #6600cc;}/*purple*/
+	85% {background: #cc00cc;}/*magneta*/
+	95% {background: #ff0066;}/*pink*/
+	100% {background: #ff0000;}/*pink*/
+}
+
+@keyframes color-animation-text
+{
+	0% {color: #FF0000;} /*red*/
+	15% {color: #ff6600;}/*orrange*/
+	25% {color: #ffff00;}/*yellow*/
+	35% {color: #00FF00;}/*green*/
+	45% {color: #00ffff;}/*aqua*/
+	55% {color: #0099ff;}/*light blue*/
+	65% {color: #0000FF;}/*blue*/
+	75% {color: #6600cc;}/*purple*/
+	85% {color: #cc00cc;}/*magneta*/
+	95% {color: #ff0066;}/*pink*/
+	100% {color: #ff0000;}/*pink*/
+}
+
+.color
+{
+	animation: color-animation 3s infinite ease-in-out normal;
+}
+
+.color-text
+{
+	animation: color-animation-text 3s infinite ease-in-out normal;
+}

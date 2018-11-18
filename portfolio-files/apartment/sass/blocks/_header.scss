@@ -1,0 +1,282 @@
+.nav{
+  background-color: #002f2f;
+  width: 100%;
+  min-width: 360px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  &__item a{
+    color: #fefefe;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -75px;
+    top: 0;
+    width: 150px;
+    height: 1px;
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__item a:hover, &__item a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__item--active::before {
+    display: none;
+  }
+
+  &__item-logo {
+    width: 30%;
+    padding-bottom: 0;
+  }
+
+  &__item-call {
+    width: 40%;
+    margin-top: 30px;
+    padding: 0;
+    cursor: default;
+  }
+
+  &__item-tel {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.nav--closed .nav__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.nav--closed .nav__toggle {
+  &:active::before, &:hover::before {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.nav--closed .nav__toggle:active::before, .nav--closed .nav__toggle:hover::before {
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.nav--opened .nav__toggle {
+  top: 17px;
+  right: 40px;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after,
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+      width: 14%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__item-logo {
+      width: 37%;
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    &__item-call {
+      width: 51%;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    &__item::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      margin-top: -10px;
+      top: 50%;
+      width: 1px;
+      height: 20px;
+      background-color: #f1f1f1;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &__item::before {
+      display: none;
+    }
+
+    &__item--active::after, &__item-obj::after{
+      display: none;
+    }
+
+    &__item-tel {
+      font-size: 29px;
+    }
+
+    &__item-text {
+      font-size: 18px;
+    }
+
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav--closed .nav__item {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+
+    &__list {
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__item::after {
+      display: none;
+    }
+
+    &__item-call {
+      order: 9;
+      width: 20%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    &__item-logo {
+      width: 10%;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__item-obj, &__item-company, &__item-buy, &__item-agents, &__item-regions, &__item-stock, &__item-contacts {
+      width: 10%;
+    }
+
+    &__item-tel {
+      font-size: 22px;
+    }
+
+    &__item-text {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .nav {
+
+    &__item {
+      font-size: 24px;
+    }
+
+    &__item-call {
+      width: 30%;
+    }
+
+    &__item-logo {
+      width: 12.9%;
+    }
+
+    &__item-obj, &__item-company, &__item-buy, &__item-agents, &__item-regions, &__item-stock, &__item-contacts {
+      width: 7.9%;
+    }
+
+    &__item-tel {
+      font-size: 32px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+    }
+  }
+}

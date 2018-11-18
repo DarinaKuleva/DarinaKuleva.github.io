@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotolight.woff2") format("woff2"), url("../fonts/Robotolight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotothin.woff2") format("woff2"), url("../fonts/Robotothin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold; }
+
+a 
+{
+  text-decoration: none;
+  cursor: default;
+  color: #fff; 
+}
+
+li 
+{
+  list-style-type: none; 
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #040812;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%; 
+}
+
+img 
+{
+  max-width: 100%;
+  height: auto; 
+}
+
+html,
+body 
+{
+  height: 100%;
+  min-width: 360px;
+  max-width: 100%;
+}
+
+.nav
+{
+  position: absolute;
+  width: 100%;
+  height: 51px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav_list
+{
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav--item
+{
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  width: 33.33%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav--buy
+{
+  border: 1px solid #22067B;
+  background: #22067B;
+  border-radius: 6px;
+  padding: 8px 20px;
+}
+
+.nav--fixed 
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; 
+}
+
+.servers
+{
+  display: block;
+  max-width: 100%;
+  min-width: 360px;
+}
+
+.servers .text-list
+{
+  font-weight: 300;
+  font-size: 36px;
+  color: #787474;
+  margin-top: 112px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.servers .text-servers
+{
+  font-weight: 700;
+  font-size: 54px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 32px rgba(199, 179, 241, 0.6);
+  margin-top: 0px;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.list
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+th
+{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #404040;
+  padding-bottom: 12px;
+}
+
+td
+{
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #F1F1F1;
+  padding-bottom: 8px;
+}
+
+table
+{
+  width: 320px;
+  border: none;
+  border-collapse: collapse;
+}
+
+.footer
+{
+  display: block;
+  max-width: 100%;
+  min-width: 360px; 
+}
+
+.footer .footer-text
+{
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #404040;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px)
+{
+  .servers .text-list
+  {
+    font-size: 42px;
+  }
+
+  .servers .text-servers
+  {
+    font-size: 64px;
+  }
+
+  .footer .footer-text
+  {
+    font-size: 12px;
+  }
+
+  th
+  {
+    font-size: 20px;
+  }
+
+  td
+  {
+    font-size: 16px;
+  }
+
+  table
+  {
+    width: 480px;
+  }
+
+  table td { border-left: 1px solid #161616; }
+  table td:first-child { border-left: none; }
+}
+
+@media (min-width: 1024px)
+{
+  .servers .text-list
+  {
+    font-size: 48px;
+    margin-top: 128px;
+    margin-bottom: 48px;
+  }
+
+  .servers .text-servers
+  {
+    font-size: 72px;
+  }
+
+  .footer .footer-text
+  {
+    font-size: 12px;
+  }
+
+  th
+  {
+    font-size: 24px;
+  }
+
+  td
+  {
+    font-size: 16px;
+  }
+
+  table
+  {
+    width: 480px;
+  }
+
+  .list
+  {
+    margin-top: 86px;
+  }
+
+  .nav_list
+  {
+    justify-content: center;
+    width: 540px;
+    margin: 0 auto;
+  }
+
+  table td { border-left: 1px solid #161616; }
+  table td:first-child { border-left: none; }
+}

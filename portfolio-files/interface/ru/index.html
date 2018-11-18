@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="alternate" hreflang="x-default" href="https://bymerc.xyz/deadz"/>
+		<link rel="alternate" hreflang="ru" href="https://bymerc.xyz/ru/deadz"/>
+		<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/btncolor.css">
+		<title>Интерфейс - DEADZ</title>
+		<meta name="theme-color" content="#000000" />
+		<link rel="icon" href="https://bymerc.xyz/deadz/img/icon.png">
+		<meta name="description" content="Interface by DEADZ - патч для Lineage 2 для клиентов High Five (HF5). Интерфейс делают игру более привлекательной для людей, которым надоели постоянные рутинные действия.">
+		<meta property="og:title" content="Interface by DEADZ">
+		<meta property="og:description" content="Interface by DEADZ - патч для Lineage 2 для клиентов High Five (HF5). Интерфейс делают игру более привлекательной для людей, которым надоели постоянные рутинные действия.">
+		<meta property="og:url" content="https://bymerc.xyz/ru/deadz/">
+		<meta property="og:sitename" content="Interface by DEADZ">
+		<meta property="og:image" content="https://bymerc.xyz/deadz/img/og-image.png">
+		<meta property="og:image:width" content="855">
+		<meta property="og:image:height" content="350">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ru_RU">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128865700-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-128865700-1');
+		</script>
+		<script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter51029105 = new Ya.Metrika2({
+                        id:51029105,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/51029105" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<svg style="display:none">
+			<polygon points="179.836,0.839 120.415,0.839 239.257,148.439 120.415,297.839 179.836,297.839 298.678,148.439  " fill="#FFFFFF"/>
+			</simbol>
+			<symbol id="icon-down" viewBox="0 0 80 40">
+				<path d="M80 0H0L40 40L80 0Z" fill="#2C96E3"/>
+				<path d="M80 0H0L40 40L80 0Z" fill="#A84EEE"/>
+				<path d="M80 0H0L40 40L80 0Z" fill="#F2F2F2"/>
+				</path>
+				</path>
+				</path>
+			</symbol>
+			<symbol id="properties-line" viewBox="0 0 58 3">
+				<line x1="1.31134e-07" y1="1.5" x2="58" y2="1.50001" stroke="white" stroke-width="3"/>
+				<line x1="1.31134e-07" y1="1.5" x2="58" y2="1.50001" stroke="white" stroke-width="3"/>
+			</symbol>
+			<symbol id="close-icon" viewBox="0 0 78 78">
+				<path d="M18.9393 59.8302L57.8302 20.9393M21.0607 20.9393L59.9515 59.8302M76 39C76 59.4345 59.4345 76 39 76C18.5655 76 2 59.4345 2 39C2 18.5655 18.5655 2 39 2C59.4345 2 76 18.5655 76 39Z" stroke="#818181" stroke-width="3"/>
+			</symbol>
+		</svg>
+		<main>
+			<section class="promo">
+				<div class="promo__title">
+					<button class="promo--lang" onclick="location.href='https://bymerc.xyz/deadz/';">EN</button>
+					<h2 class="promo__text promo--desc">lineage ii modification</h2>
+					<h1 class="promo__text promo--logo">interface</h1>
+					<h2 class="promo__text promo--deadz">by deadz</h2>
+					<button class="promo--watch-btn" onclick="location.href='https://www.youtube.com/watch?v=sFR_7wm5P30';">
+					посмотреть
+					</button>
+				</div>
+				<div class="bg__video">
+					<div class="video__overlay"></div>
+					<video loop muted autoplay poster="https://bymerc.xyz/deadz/video/dedz.png">
+			        	<source src="https://bymerc.xyz/deadz/video/dedz.mp4" type="video/mp4">
+			        	<source src="https://bymerc.xyz/deadz/video/dedz.webm" type="video/webm">
+	      			</video>
+      			</div>
+			</section>
+			<div class="nav-wrapper">
+				<div class="nav">
+					<ul class="nav__list ">
+						<li class="nav--item"><a id="btnUpd" href="./updates.html">обновления</a></li>
+						<li class="nav--item"><a id="btnServ" href="./servers.html">серверы</a></li>
+						<li class="nav--item"><a id="btnBuy" href="./buy.html" class="nav--buy">купить</a></li>
+					</ul>
+				</div>
+			</div>
+			<section class="features">
+				<section class="features__slogan">
+					<div class="features__slogan-conteiner">
+						<div class="features__slogan-title">
+							<h1 class="features__slogan-lite">сделай</h1>
+							<h1 class="features__slogan-dark"> свою</h1>
+						</div>
+						<div class="features__slogan-title">
+							<h1 class="features__slogan-dark"> жизнь</h1>
+							<h1 class="features__slogan-lite"> проще</h1>
+						</div>
+					</div>
+					<p class="features__slogan-text">поставь рутину на автомат</p>
+				</section>
+			</section>
+			<section class="properties item-enchant" id="_item">
+			<div class="wow bounceInUp properties__title-ench">
+				<h2 id="item-text" class="properties__title properties__title-skill">заточка предметов</h2>
+				</div>
+				<div class="dinamic dinamic-enchant">
+					<img id="img_item" src="https://bymerc.xyz/deadz/img/item-enchant.png" width="250px" height="318px" class="wow bounceInUp">
+					<section id="enchant_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Выбор блески и обычной точки</h3>
+								<p class="info__block-text">Можно точить сначала обычными, затем блесками на автомате.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Гибкие настройки</h3>
+								<p class="info__block-text">Скорость "вставки скролла", “ожидание во время заточки” and “ожидание после заточки” speeds.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Полный автомат</h3>
+								<p class="info__block-text">Забудь об унылой точке. Наслаждайся игрой.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(enchant_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+
+			</section>
+			<section class="properties attribute" id="_att">
+			<div class="wow bounceInUp">
+				<h2 id="att-text" class="properties__title properties__title-att properties__title-line">атрибут</h2>
+				</div>
+				<div class="dinamic dinamic-attribute">
+					<img id="img_att" src="https://bymerc.xyz/deadz/img/attribute.png" width="247px" height="332px" class="wow bounceInUp">
+					<section id="attribute_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Умный аугмент</h3>
+								<p class="info__block-text">Используй камни, кристаллы или все вместе.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Атрибут брони</h3>
+								<p class="info__block-text">Атрибуть шмот на 120 за считанные секунды.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Атрибут оружия</h3>
+								<p class="info__block-text">Вставляй сразу 300 за несколько секунд.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(attribute_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties augmentation" id="_aug">
+				<h2 id="aug-text" class="properties__title properties__title-line">аугментация</h2>
+				<div class="dinamic dinamic-augmentation">
+					<div id="aug_margin" class="augmentation__img">
+						<img id="img_aug_1" src="https://bymerc.xyz/deadz/img/augmentation-top.png" width="318px" height="240px" class="augmentation__img-top">
+						<img id="img_aug_2" src="https://bymerc.xyz/deadz/img/augmentation-bottom.png" width="184px" height="262px">
+					</div>
+					<section id="aug_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Список ЛСов</h3>
+								<p class="info__block-text">Выбраны только самые полезные ЛСы.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Комбинации</h3>
+								<p class="info__block-text">Можно искать стату + скилл.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Кнопка "Повторить"</h3>
+								<p class="info__block-text">Вместо автоматики можно ловить вручную одной кнопкой.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(aug_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties skill-enchant" id="_ench">
+				<h2 id="skill-text" class="properties__title properties__title-skill">заточка скиллов</h2>
+				<div id="top-skill" class="dinamic dinamic-skill">
+					<img id="img_skill" src="https://bymerc.xyz/deadz/img/skill-enchant.png" width="328px" height="214px">
+					<section id="skill_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Точи с удовольствием</h3>
+								<p class="info__block-text">Выбери направление заточки. Выбери желаемый уровень. Выбери скорость. Отдохни.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Учет расходников</h3>
+								<p class="info__block-text">Останавливается, когда кончаются кодексы/адена/SP.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(skill_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties castbars">
+				<h3 class="properties__text castbars__text castbars__text-small">уникальные</h3>
+				<h2 class="properties__title castbars__title">кастбары</h2>
+				<div class="castbars__box">
+					<div class="properties__text-conteiner castbars__elegant-conteiner">
+						<h3 class="properties__text castbars__text-bold">элегантный <span class="properties__text castbars__text">у вас</span></h3>
+					</div>
+					<img src="https://bymerc.xyz/deadz/img/castbars-top.png" width="225px" height="21px" class="wow bounceInRight">
+					<div class="properties__text-conteiner castbars__colorful-conteiner">
+						<h3 class="properties__text castbars__text">цветной
+							<span class="properties__text castbars__text-bold">у них</span>
+						</h3>
+					</div>
+					<img src="https://bymerc.xyz/deadz/img/castbars-bottom.png" width="231px" height="271px" class="castbars__img-bottom wow bounceInLeft">
+				</div>
+			</section>
+			<section class="properties cycled-macro" id="_macro">
+			<div class="wow bounceInUp">
+				<h2 id="cycl-text" class="properties__title properties__title-macro properties__title-line">цикл. макрос</h2>
+				</div>
+				<div class="dinamic dinamic-cycled">
+					<img id="img_cycl" src="https://bymerc.xyz/deadz/img/cycled-macro.png" width="284px" height="325px" class="wow bounceInUp">
+					<section id="macro_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Бесконечный цикл</h3>
+								<p class="info__block-text">Правый клик на макросе в списке и он используется автоматически.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Без прерываний</h3>
+								<p class="info__block-text">Делайте что хотите. Макрос не прервет выполнения.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Подсказки</h3>
+								<p class="info__block-text">Все команды макроса показываются при наведении.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(macro_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties potions" id="_pots">
+			<div class="wow bounceInUp properties__title-potions">
+				<h2 id="pot-text" class="properties__title properties__title-line-small">банки</h2>
+				</div>
+				<div class="dinamic dinamic-potions">
+					<img id="img_pot" src="https://bymerc.xyz/deadz/img/potions.png" width="284px" height="325px" class="wow bounceInUp">
+					<section id="potions_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Наиболее используемые банки</h3>
+								<p class="info__block-text">Чтобы удовлетворить все ваши потребности.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Авто использование</h3>
+								<p class="info__block-text">Выбери задержку и условие использования.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Контролируй бафы</h3>
+								<p class="info__block-text">Используй банки Wind Walk, Haste и Acumen на автомате.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(potions_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties radar">
+				<div class="radar__box">
+					<h2 class="properties__title radar__title-top">радар</h2>
+					<h3 class="properties__text radar__text">знай своего врага</h3>
+					<div class="radar__container">
+						<ul id="slider-radar" class="radar__slider">
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/radar.png">
+									<h2 class="radar__title">радар</h2>
+									<p id="" class="radar__text-slider">Находит врагов вокруг вас. Варов или ПвП / ПК.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/Radar_Options.png">
+									<h2 class="radar__title">опции</h2>
+									<p class="radar__text-slider">Находи игроков по нику. Доступно 9 слотов. Двойной клик по игроку, и стрелка укажет направление</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/Radar_Scanner.png">
+									<h2 class="radar__title">сканер</h2>
+									<p class="radar__text-slider">Радар определяет игроков по действиям и игнорирует их, если они АФК, функция \"сканирования\" позволяет находить даже АФК игроков.<br><br> Во время сканирования вы можете наблюдать падения ФПС на слабых ПК</p>
+								</div>
+							</li>
+						</ul>
+						<button id="radar__prev" class="radar__prev"><img src="https://bymerc.xyz/deadz/img/icon-next.svg" width="32px" height="25px"></button>
+						<button id="radar__next" class="radar__next"><img src="https://bymerc.xyz/deadz/img/icon-next.svg" width="32px" height="25px"></button>
+					</div>
+
+					<div class="radar__container-tablet">
+						<img id="radar-img-tablet" src="https://bymerc.xyz/deadz/img/radar.png">
+						<ul id="button-radar" class="radar__button">
+							<li>
+								<div id="btnWindow">
+									<h2 class="radar__title">радар</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnOpt">
+									<h2 class="radar__title">опции</h2>
+							</li>
+							<li>
+								<div id="btnScan">
+									<h2 class="radar__title">сканер</h2>
+								</div>
+							</li>
+						</ul>
+
+						<p id="radar-text-tablet" class="radar__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+					</div>
+
+				</div>
+			</section>
+			<section class="properties party" id="_party">
+			<div class="wow bounceInUp properties__title-party">
+				<h2 id="party-text" class="properties__title properties__title-line-party">пати</h2>
+				</div>
+				<div class="dinamic dinamic-party">
+					<img id="img_party" src="https://bymerc.xyz/deadz/img/party.png" width="308px" height="501px" class="wow bounceInUp">
+					<section id="party_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Улучшенные просмотр бафов</h3>
+								<p class="info__block-text">Например, “Сонги / Дансы + Дебаффы”  “Сонги + Баффы”</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Ассист по кнопке</h3>
+								<p class="info__block-text">Выбери “ассистера” и кнопку. Больше не надо кликать мышкой.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Новый набор иконок</h3>
+								<p class="info__block-text">Улучшенные иконки классов помогают лучше управлять группой.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Баффы в Дебаффы</h3>
+								<p class="info__block-text">Наиболее важные бафы могут быть отображены одновременно с дебаффами.</p>
+							</div>
+						</div>
+						<div class="btn-close">
+							<a onclick="closeBtn(party_id)">
+								<svg width="78px" height="78px">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="#close-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties status" id="_status">
+			<div class="wow bounceInUp">
+				<h2 id="status-text" class="properties__title properties__title-status properties__title-line-small">статус</h2>
+				</div>
+				<div class="dinamic dinamic-status">
+					<img id="img_status" src="https://bymerc.xyz/deadz/img/Status_Green.png" width="318px" height="116px" class="wow bounceInUp">
+					<section id="status_id" class="info">
+						<div class="info__box">
+							<div class="info__block">
+								<h3 class="info__block-title">Новый статус</h3>
+								<p class="info__block-text">Информация о игроке была перемещена в новое окно.</p>
+							</div>
+							<div class="info__block">
+								<h3 class="info__block-title">Захват цели</h3>
+								<p class="info__block-text">Привяжите свой таргет к любому игроку. Так же возможно назначить клавишу (или комбинацию), чтобы быстро менять цели.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="properties olympiad">
+				<div class="olympiad__box">
+					<h2 class="properties__title olympiad__title-top">олимпиада</h2>
+					<h3 class="properties__text olympiad__text">будь лучшим</h3>
+					<div class="olympiad__container">
+						<ul id="slider-olympiad" class="olympiad__slider">
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/olimpiad.png">
+									<h2 class="olympiad__title">окно</h2>
+									<p class="olympiad__text-slider"><br>Считает входящий и исходящий урон с 85-90% 
+									c точностью (учитываются такие сложные моменты, как отравления и урон с Пати УД). 
+									<br><br>
+									Таймер боя помогает ориентироваться в том, сколько времени осталось на бой.
+									<br><br>
+									Статы противника дают информацию о его типе.
+									<br><br>
+									Таймеры баффов позволяют отлично контролировать противника в бою.
+									<br><br>
+									И наконец, отображение скорости бега, каста и дистанция до противника.<br></p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/OlyTarget.png">
+									<h2 class="olympiad__title">таргет</h2>
+									<p class="olympiad__text-slider"><br>HP и CP теперь в цифрах.<br> Кастбар противника привязывается к этому окну.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/OlyItems_full.png">
+									<h2 class="olympiad__title">итемы</h2>
+									<p class="olympiad__text-slider">Новое окно для контроля ваших итемов, таких как: ожерелье, кольцо, ремень, оружие и щит/сигиль</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src="https://bymerc.xyz/deadz/img/OlySummon.png">
+									<h2 class="olympiad__title">суммон</h2>
+									<p class="olympiad__text-slider"><br>Увеличены размер бафов и HP бар.<br> Включены таймеры бафов.</p>
+								</div>
+							</li>
+						</ul>
+						<button id="olympiad__prev" class="olympiad__prev"><img src="https://bymerc.xyz/deadz/img/icon-next.svg" width="25px" height="32px"></button>
+						<button id="olympiad__next" class="olympiad__next"><img src="https://bymerc.xyz/deadz/img/icon-next.svg" width="25px" height="32px"></button>
+					</div>
+						<div class="olympiad__container-tablet">
+						<img id="oly-img-tablet" src="https://bymerc.xyz/deadz/img/olimpiad.png">
+						<ul id="button-olympiad" class="olympiad__button">
+							<li>
+								<div id="btnWindowOly">
+									<h2 class="olympiad__title">окно</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnTarget">
+									<h2 class="olympiad__title">таргет</h2>
+							</li>
+							<li>
+								<div id="btnItems">
+									<h2 class="olympiad__title">итемы</h2>
+								</div>
+							</li>
+							<li>
+								<div id="btnSumm">
+									<h2 class="olympiad__title">суммон</h2>
+								</div>
+							</li>
+						</ul>
+
+						<p id="oly-text-tablet" class="olympiad__text-slider">hhhhh players beforehand. Either they are war clan members or in PvP / PK mode.</p>
+					</div>
+				</div>
+			</section>
+			<section class="properties expansions">
+				<h2 class="properties__title expansions__title-top">расширения</h2>
+				<h3 class="properties__text expansions__text-top">почувствуй разницу</h3>
+			</section>
+			<section class="properties buffs">
+				<div class="buffs__box">
+					<img src="https://bymerc.xyz/deadz/img/debuff.png" width="149px" height="116px" class="properties__img buffs__img">
+					<div class="expansions__line buffs__line">
+						<h2 class="expansions__title expansions__title-buffs">баффы</h2>
+						<h3 class="expansions__text">таймер дебаффов</h3>
+						<h3 class="expansions__text">два размера</h3>
+					</div>
+				</div>
+			</section>
+			<section class="properties target">
+				<div class="target__box">
+					<img src="https://bymerc.xyz/deadz/img/target.png" width="182px" height="91px" class="properties__img target__img">
+					<div class="expansions__line target__line">
+						<h2 class="expansions__title expansions__title-target">таргет</h2>
+						<h3 class="expansions__text">пригласить в пати</h3>
+						<h3 class="expansions__text">класс в титуле</h3>
+						<h3 class="expansions__text">иконка класса</h3>
+					</div>
+				</div>
+			</section>
+			<section class="properties shortcuts">
+				<div class="shortcuts__img">
+					<img src="https://bymerc.xyz/deadz/img/shortcut-top.png" width="344px" height="230px" class="shortcuts__img-top">
+					<img src="https://bymerc.xyz/deadz/img/shortcut-bottom.png" width="344px" height="230px" class="properties__img">
+				</div>
+				<div class="shortcuts__img-tablet">
+					<img src="https://bymerc.xyz/deadz/img/shortcut-left.png" width="374px" height="230px">
+					<img src="https://bymerc.xyz/deadz/img/Shortcut-right.png" width="235px" height="194px">
+				</div>
+				<div class="expansions__line shortcuts__line">
+					<h2 class="expansions__title">шорткаты</h2>
+					<h3 class="expansions__text">доп. бинды клавиш</h3>
+					<h3 class="expansions__text">две доп. панели</h3>
+					<h3 class="expansions__text">панель таликов</h3>
+					<h3 class="expansions__text">6x12 шорткатов</h3>
+				</div>
+			</section>
+			<section class="properties inventory">
+				<img src="https://bymerc.xyz/deadz/img/inventory.png" width="344px" height="409px" class="properties__img inventory__img">
+				<img src="https://bymerc.xyz/deadz/img/inventory-tablet.png" width="589px" height="410px" class="properties__img inventory__img-tablet">
+				<img src="https://bymerc.xyz/deadz/img/inventory-desk.png" width="589px" height="410px" class="properties__img inventory__img-desk">
+				<div class="expansions__line">
+					<h2 class="expansions__title">инвентарь</h2>
+					<h3 class="expansions__text">расширение слотов</h3>
+					<h3 class="expansions__text">быстрое удаление итемов</h3>
+				</div>
+			</section>
+			<section class="properties screen-damage">
+				<div class="screen-damage__container">
+					<ul id="slider" class="screen-damage__slider">
+						<li><img src="https://bymerc.xyz/deadz/img/screen-damage-1.png" alt="" class="test" /></li>
+						<li><img src="https://bymerc.xyz/deadz/img/screen-damage-2.png" alt="" class="test"/></li>
+					</ul>
+				</div>
+				<div class="screen-damage__container-desk">
+					<ul id="slider" class="screen-damage__slider">
+						<li><img src="https://bymerc.xyz/deadz/img/screen-damage_desk-1.png" alt="" class="test" /></li>
+						<li><img src="https://bymerc.xyz/deadz/img/screen-damage_desk-2.png" alt="" class="test"/></li>
+					</ul>
+				</div>
+				<ul id="dots" class="screen-damage__dots">
+					<li class="active"></li>
+					<li></li>
+				</ul>
+				<div class="expansions__line">
+					<h2 class="expansions__title screen-damage__title">урон на экране</h2>
+					<div class="screen-damage__text">
+					<h3 class="expansions__text screen-damage__text">трансфер пейн <br><span class="expansions__text screen-damage__small-text">учтен</span></h3>
+					</div>
+				</div>
+			</section>
+			<section class="properties canceled-buffs">
+				<img src="https://bymerc.xyz/deadz/img/canceled-buffs.png" width="230px" height="75px" class="properties__img canceled-buffs__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title canceled-buffs__title">сканселенные бафы</h2>
+					<h3 class="expansions__text canceled-buffs__text">ребафнись, кликая на иконки</h3>
+				</div>
+			</section>
+			<section class="properties intellegent">
+				<img src="https://bymerc.xyz/deadz/img/intellegent.png" width="326px" height="90px" class="properties__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title intellegent__title">умный контроль пати</h2>
+					<h3 class="expansions__text intellegent__text">удобно для пати лидеров</h3>
+				</div>
+			</section>
+			<section class="properties automatic">
+				<img src="https://bymerc.xyz/deadz/img/automatic.png" width="168px" height="86px" class="properties__img">
+				<div class="expansions__line">
+					<h2 class="expansions__title automatic__title">автоматические соски & души</h2>
+					<h3 class="expansions__text automatic__text">держит уровень душ на 40</h3>
+				</div>
+			</section>
+			<section class="properties settings">
+				<img src="https://bymerc.xyz/deadz/img/settings.png" width="344px" height="434px" class="properties__img settings__img">
+				<img src="https://bymerc.xyz/deadz/img/settings-tablet.png" width="468px" height="434px" class="properties__img settings__img-tablet">
+				<img src="https://bymerc.xyz/deadz/img/settings-desk.png" width="468px" height="434px" class="properties__img settings__img-desk">
+				<div class="expansions__line wow bounceInUp">
+					<h2 class="expansions__title">настройки</h2>
+					<h3 class="expansions__text settings__text">кастомизируй интерфейс как пожелаешь</h3>
+				</div>
+			</section>
+			<section class="properties dnk">
+				<img src="https://bymerc.xyz/deadz/img/dnk.png" width="112px" height="178px">
+				<h3 class="dnk__text">Interface by DEADZ © 2017 - 18</h3>
+			</section>
+		</main>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function closeBtn(x) {
+				if (x.style.display === "none") {
+						x.style.display = "block";
+				} else {
+						x.style.display = "none";
+				}
+			}
+
+		</script>
+		<script type="text/javascript" src="js/slider-screen.js"></script>
+		<script type="text/javascript" src="js/slider-olympiad.js"></script>
+		<script type="text/javascript" src="js/slider-radar.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+		<script type="text/javascript" src="js/over-tex.js"></script>
+		<script type="text/javascript" src="js/toggle-radar.js"></script>
+		<script type="text/javascript" src="js/toggle-oly.js"></script>
+		<script type="text/javascript" src="js/bottom-features.js"></script>
+		<script type="text/javascript">
+			wow = new WOW(
+			{
+				animateClass: 'animated',
+				offset:       100,
+				callback:     function(box) 
+				{
+					//console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+				}
+			});
+			wow.init();
+		</script>
+	</body>
+</html>
